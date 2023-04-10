@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 1
+title: Hexapod Adaption
 description: a project with a background image
 img: assets/img/hexapod-cover.jpg
 importance: 1
