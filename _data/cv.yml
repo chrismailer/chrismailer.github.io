@@ -16,7 +16,7 @@
       year: 2023
       description:
         - Awarded prestigious merit-based Harry Crossley Research Fellowship
-        - title: Thesis title: Control of Rapid Acceleration in a Planar Legged Robot <a href="www.google.com">[1]</a>
+        - title: Thesis title: Control of Rapid Acceleration in a Planar Legged Robot
           contents:
             - Mechanical Design, Optimal Control, Simulink Modelling & Simulation
     - title: BSc Mechanical and Mechatronic Engineering (Honours)
@@ -27,87 +27,87 @@
         - Awarded Class Medal in final year for highest cumulative grade
         - Awarded SASOL Product Design Prize for Product Design course
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Technical Assistant – Robotics Lab
-      institution: University of Cape Town
-      year: Feb 2021 – Dec 2022
-      description:
-        - Responsible for Mechanical design, workshop drawings, and procurement of components.
-        - Ran experiments, collected data, and designed test setups for various projects.
-        - Control system development in Simulink on a Speedgoat Real-Time Target Machine.
-        - Communication with BLDC motors over CAN Bus, and 5-axis Force Transducer over EtherCAT.
-        
-    - title: Student Lab Intern – Robotics Lab
-      institution: University of Cape Town
-      year: Nov 2019 – Dec 2019
-      description:
-        - Robot maintenance and modification to mitigate impact failure mode in planetary gearbox.
-        - Implemented BLDC motor control with ODrive controller and optical encoders.
-        - Conducted FEA stress analysis to minimise component mass while retaining required level of rigidity.
-
-    - title: Practical Training Course
-      institution: Cape Peninsula University of Technology
-      year: Nov 2018 – Dec 2018
-      description:
-        - Training in CNC programming & machining, precision metrology and measurement, electrical automation/robotics, pneumatics, welding, fitting and turning.
-
-    - title: Student Intern – Software
-      institution: Student Intern – Software
-      year: Dec 2017 – Jan 2018
-      description:
-        - Software development in R to create a program to provide a preliminary inflation estimate from approximately 80 thousand online prices every day.
-        - Extensive work on data collection, database management, and data visualisation.
-        - Presented projects and results to senior fund managers and other stakeholders.
-
-# - title: Open Source Projects
+# - title: Experience
 #   type: time_table
 #   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+#     - title: Technical Assistant – Robotics Lab
+#       institution: University of Cape Town
+#       year: Feb 2021 – Dec 2022
+#       description:
+#         - Responsible for Mechanical design, workshop drawings, and procurement of components.
+#         - Ran experiments, collected data, and designed test setups for various projects.
+#         - Control system development in Simulink on a Speedgoat Real-Time Target Machine.
+#         - Communication with BLDC motors over CAN Bus, and 5-axis Force Transducer over EtherCAT.
+        
+#     - title: Student Lab Intern – Robotics Lab
+#       institution: University of Cape Town
+#       year: Nov 2019 – Dec 2019
+#       description:
+#         - Robot maintenance and modification to mitigate impact failure mode in planetary gearbox.
+#         - Implemented BLDC motor control with ODrive controller and optical encoders.
+#         - Conducted FEA stress analysis to minimise component mass while retaining required level of rigidity.
 
-- title: Honours and Awards
-  type: time_table
-  contents:
-    - year: 2021
-      items: 
-        - Harry Crossley Research Fellowship
-        - Vice-Chancellor Research Scholarship
-        - Ada & Bertie Levenstein Scholarship
-        - NRF Postgraduate Scholarship
-    - year: 2019
-      items: 
-        - Final Year Class Medal
-        - SASOL Product Design Award
-    - year: 2017
-        - Dean’s Merit List x3
-        - Mechanical Engineering I Class Medal
+#     - title: Practical Training Course
+#       institution: Cape Peninsula University of Technology
+#       year: Nov 2018 – Dec 2018
+#       description:
+#         - Training in CNC programming & machining, precision metrology and measurement, electrical automation/robotics, pneumatics, welding, fitting and turning.
 
-# - title: Academic Interests
-#   type: nested_list
+#     - title: Student Intern – Software
+#       institution: Student Intern – Software
+#       year: Dec 2017 – Jan 2018
+#       description:
+#         - Software development in R to create a program to provide a preliminary inflation estimate from approximately 80 thousand online prices every day.
+#         - Extensive work on data collection, database management, and data visualisation.
+#         - Presented projects and results to senior fund managers and other stakeholders.
+
+# # - title: Open Source Projects
+# #   type: time_table
+# #   contents:
+# #     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+# #       year: 2015-now
+# #       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+# - title: Honours and Awards
+#   type: time_table
 #   contents:
-#     - title: Topic 1.
+#     - year: 2021
 #       items: 
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
+#         - Harry Crossley Research Fellowship
+#         - Vice-Chancellor Research Scholarship
+#         - Ada & Bertie Levenstein Scholarship
+#         - NRF Postgraduate Scholarship
+#     - year: 2019
+#       items: 
+#         - Final Year Class Medal
+#         - SASOL Product Design Award
+#     - year: 2017
+#         - Dean’s Merit List x3
+#         - Mechanical Engineering I Class Medal
 
-- title: Volunteering and Mentoring
-  type: time_table
-  contents:
-    - title: Instructor
-      institution: High School Arduino Educational Outreach
-      year: Sep 2021 – Dec 2021
-      description:
-        - Introduced Portlands High School students to programming, electronics, soldering and 3D printing.
-        - Co-facilitated an 8 week workshop building a heart rate sensor, a motion alarm, and a sweet colour sorter.
+# # - title: Academic Interests
+# #   type: nested_list
+# #   contents:
+# #     - title: Topic 1.
+# #       items: 
+# #         - Description 1.
+# #         - Description 2.
+# #     - title: Topic 2.
+# #       items:
+# #         - Description 1.
+# #         - Description 2.
 
-- title: Hobbies
-  type: list
-  contents:
-    - Surfing, Sailing, Cycling.
+# - title: Volunteering and Mentoring
+#   type: time_table
+#   contents:
+#     - title: Instructor
+#       institution: High School Arduino Educational Outreach
+#       year: Sep 2021 – Dec 2021
+#       description:
+#         - Introduced Portlands High School students to programming, electronics, soldering and 3D printing.
+#         - Co-facilitated an 8 week workshop building a heart rate sensor, a motion alarm, and a sweet colour sorter.
+
+# - title: Hobbies
+#   type: list
+#   contents:
+#     - Surfing, Sailing, Cycling.
