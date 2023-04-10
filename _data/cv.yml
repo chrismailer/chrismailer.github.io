@@ -13,7 +13,7 @@
   contents:
     - title: MSc Electrical Engineering (Under Examination)
       institution: University of Cape Town
-      year: 2023
+      year: 2021 - 2023
       description:
         - Awarded prestigious merit-based Harry Crossley Research Fellowship
         - title: Thesis titled Control of Rapid Acceleration in a Planar Legged Robot
@@ -21,7 +21,7 @@
             - Mechanical Design, Optimal Control, Simulink Modelling and Simulation
     - title: BSc Mechanical and Mechatronic Engineering (Honours)
       institution: University of Cape Town
-      year: 2021
+      year: 2017 - 2020
       description:
         - Grade 82% (First Class Honours and 1st in class)
         - Awarded Class Medal in final year for highest cumulative grade
@@ -80,8 +80,8 @@
         - NRF Postgraduate Scholarship
     - year: 2020
       items: 
-        - Final Year Class Medal for highest overall GPA in graduating class
-        - SASOL Product Design Award for highest grade in final year design class
+        - Final Year Class Medal <em>for highest overall GPA in graduating class</em>
+        - SASOL Product Design Award <em>for highest grade in final year design class</em>
     - year: 2017, 2018, 2019
       items:
         - Dean’s Merit List
@@ -92,12 +92,12 @@
 - title: Skills
   type: nested_list
   contents:
-    - title: Programming
+    - title: Programming Languages
       items: 
         - Python, C/C++, R, Swift
     - title: Software
       items:
-        - SolidWorks, MATLAB, LabVIEW, LATEX, Git
+        - SolidWorks, MATLAB, LaTeX, Git, LabVIEW
 
 - title: Hobbies
   type: list
