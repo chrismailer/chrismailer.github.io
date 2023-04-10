@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kemba
-description: a project that redirects to another website
+description: MSc thesis project
 img: assets/img/kemba.jpg
 redirect: https://unsplash.com
 importance: 3
