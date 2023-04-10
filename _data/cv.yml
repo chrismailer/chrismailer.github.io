@@ -11,22 +11,21 @@
 - title: Education
   type: time_table
   contents:
-    - title: MSc Electrical Engineering
+    - title: MSc Electrical Engineering (Under Examination)
       institution: University of Cape Town
-      year: 1905
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Awarded prestigious merit-based Harry Crossley Research Fellowship
+        - title: Thesis titled Control of Rapid Acceleration in a Planar Legged Robot
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: BSc Mechanical and Mechatronic Engineering
+            - Mechanical Design, Optimal Control, Simulink Modelling and Simulation
+    - title: BSc Mechanical and Mechatronic Engineering (Honours)
       institution: University of Cape Town
-      year: 1900
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Grade 82% (First Class Honours and 1st in class)
+        - Awarded Class Medal in final year for highest cumulative grade
+        - Awarded SASOL Product Design Prize for Product Design course
 
 - title: Experience
   type: time_table
