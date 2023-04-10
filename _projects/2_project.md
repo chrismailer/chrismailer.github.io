@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 2
+title: Hopper
 description: a project with a background image
 img: assets/img/hopper-cover.jpg
 importance: 2
