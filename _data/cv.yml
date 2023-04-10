@@ -30,16 +30,16 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Technical Assistant – Robotics Lab
+      institution: University of Cape Town
+      year: Feb 2021 - Dec 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Led the design, controller development, and testing of a legged robot in the research lab.
+        - Responsible for Mechanical design, workshop drawings, and procurement of components.
+        - Ran experiments, collected data, and designed test setups for various projects.
+        - Control system development in Simulink on a Speedgoat Real-Time Target Machine.
+        - Communication with BLDC motors over CAN Bus, and 5-axis Force Transducer over EtherCAT.
+
     - title: Visiting Professor
       institution: California Institute of Technology, Pasadena, California, US
       year: 1933
