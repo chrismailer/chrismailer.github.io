@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 22nd October 1998
     - name: Languages
-      value: English, Afrikaans
+      value: English (Native), Afrikaans (High School)
 
 - title: Education
   type: time_table
