@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hopper
-description: a project with a background image
+description: A research testbed
 img: assets/img/hopper-cover.jpg
 importance: 2
 category: work
