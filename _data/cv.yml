@@ -16,7 +16,7 @@
       year: 2023
       description:
         - Awarded prestigious merit-based Harry Crossley Research Fellowship
-        - title: Thesis title: Control of Rapid Acceleration in a Planar Legged Robot [1](www.google.com)
+        - title: Thesis title: Control of Rapid Acceleration in a Planar Legged Robot <a href="www.google.com">[1]</a>
           contents:
             - Mechanical Design, Optimal Control, Simulink Modelling & Simulation
     - title: BSc Mechanical and Mechatronic Engineering (Honours)
