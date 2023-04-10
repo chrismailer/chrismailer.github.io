@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A collection of my project and design work.
+description: A collection of my design work and projects.
 nav: true
 nav_order: 2
 display_categories: [work, fun]
