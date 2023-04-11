@@ -4,7 +4,7 @@ title: Kemba
 description: MSc thesis project
 img: assets/img/kemba.jpg
 redirect: https://unsplash.com
-importance: 3
+importance: 1
 category: work
 ---
 
