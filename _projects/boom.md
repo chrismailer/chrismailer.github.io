@@ -2,7 +2,7 @@
 layout: page
 title: Boom
 description: another without an image
-img:
+img: /assets/boom-cover.jpg
 importance: 3
 category: work
 ---
