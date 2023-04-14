@@ -82,6 +82,26 @@ You describe how you toiled, sweated, *bled* for your project, and then... you r
     Interchangeable boom end configurations each with their own accelerometer.
 </div>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/boom/end-render.jpg" title="image title" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Section view of the elevation and roll axes on the boom mounting end. Bearings are shown in red and the hollow stainless steel shafts are shown in yellow.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/boom/centre-joint.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/boom/centre-joint-render.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Centre pivot with encoders and 4:1 timing belt reduction (Left), and sectioned view (Right) of the elevation axis joint showing stainless steel shafts in yellow and bearings in red.
+</div>
 
 The code is simple.
 Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
