@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: about me
 permalink: /
 subtitle: MSc Electrical Engineering - Robotics and Control Systems
 
