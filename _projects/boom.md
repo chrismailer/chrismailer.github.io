@@ -92,10 +92,10 @@ You describe how you toiled, sweated, *bled* for your project, and then... you r
 </div>
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-7 mt-3 mt-md-0">
         {% include figure.html path="assets/img/boom/centre-joint.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.html path="assets/img/boom/centre-joint-render.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
