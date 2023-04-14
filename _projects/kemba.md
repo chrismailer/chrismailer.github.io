@@ -2,7 +2,7 @@
 layout: page
 title: Kemba
 description: MSc thesis project
-img: assets/img/kemba.jpg
+img: assets/img/kemba/cover.jpg
 redirect: https://unsplash.com
 importance: 1
 category: work
