@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Hexapod Adaptation
-description: BSc thesis project
-img: assets/img/hexapod-cover.jpg
+description: Bachelors thesis project
+img: assets/img/hexapod/weird-gait.gif
 importance: 4
 category: work
 ---
