@@ -9,7 +9,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/boom/render.jpg" title="CAD rendering of the boom" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/boom/render.jpg" title="CAD rendering of the boom" class="img-fluid rounded" %}
     </div>
 </div>
 <div class="caption">
@@ -84,7 +84,7 @@ You describe how you toiled, sweated, *bled* for your project, and then... you r
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/boom/end-render.jpg" title="image title" class="img-fluid" %}
+        {% include figure.html path="assets/img/boom/end-render.jpg" title="image title" class="img-fluid rounded" %}
     </div>
 </div>
 <div class="caption">
@@ -120,3 +120,5 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+
+{% include youtube.html id="u2Hn26uojoM" %}
