@@ -7,7 +7,11 @@ importance: 1
 category: work
 ---
 
-{% include youtube.html id="KZ1mVP8R52g" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include youtube.html id="KZ1mVP8R52g" %}
+    </div>
+</div>
 
 
 {% include youtube.html id="u2Hn26uojoM" %}
