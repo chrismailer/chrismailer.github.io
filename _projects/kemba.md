@@ -7,7 +7,9 @@ importance: 1
 category: work
 ---
 
-</div>
+{% include youtube.html id="KZ1mVP8R52g" %}
+{% include youtube.html id="u2Hn26uojoM" %}
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/kemba/leg-parts.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -17,7 +19,6 @@ category: work
     Fleshy machined aluminium parts for the legs.
 </div>
 
-</div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/kemba/leg-open.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -39,7 +40,6 @@ category: work
     Tibia with press fit bearings and foot (Left) and section view showing I-beam cross section (Right).
 </div>
 
-</div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/kemba/femur-halves.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -50,10 +50,10 @@ category: work
 </div>
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-9 mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.html path="assets/img/kemba/knee-joint.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-3 mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.html path="assets/img/kemba/knee-section.jpeg" title="example image" class="img-fluid rounded" %}
     </div>
 </div>
@@ -61,7 +61,6 @@ category: work
     Exposed knee joint (Left) and cross section (Right) showing the bearings in red, tibia in green, femur in blue, and hollow steel knee shaft in yellow.
 </div>
 
-</div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/kemba/body.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
