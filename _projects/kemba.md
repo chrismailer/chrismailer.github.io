@@ -7,7 +7,7 @@ importance: 1
 category: work
 ---
 
-For my masters in UCT's robotics lab I built this robot. The project is probably best documented in my [thesis](https://chrismailer.github.io/assets/pdf/chris-masters-thesis.pdf).
+For my masters in UCT's robotics lab I built this robot. The project is probably best documented in my [thesis](https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
