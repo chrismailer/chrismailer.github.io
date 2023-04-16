@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kemba
-description: MSc thesis project
+description: Masters thesis project
 img: assets/img/kemba/cover.jpeg
 importance: 1
 category: work
