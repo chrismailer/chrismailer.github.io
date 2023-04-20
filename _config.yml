@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title:
-first_name: Christopher Mailer
+title: blank
+first_name: Christopher
 middle_name:
-last_name:
+last_name: Mailer
 email: christophermailer@icloud.com
 description: A website about me and my projects
 footer_text: >
