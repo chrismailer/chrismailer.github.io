@@ -18,22 +18,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
-    {%- if site.title == "blank" -%}
-        {%- capture title -%}{{ site.first_name }} {{ site.last_name }}{%- endcapture -%}
-    {%- else -%}
-        {%- capture title -%}{{ site.title }}{%- endcapture -%}
-    {%- endif -%}
-    {% if page.url == '/blog/index.html' %}
-        {{ site.blog_nav_title }} | {{ title }}
-    {%- elsif page.title != "blank" and page.url != "/" -%}
-        {%- if page.title == nil or page.title == "" -%}
-            {{ page.date | date: "%Y" }} | {{ title }}
+    {%- capture name -%}{{ site.first_name }} {{ site.last_name }}{%- endcapture -%}
+    {%- capture title -%}
+        {% if page.url == '/blog/index.html' %}
+            {{ site.blog_nav_title }} | {{ name }}
+        {%- elsif page.title != "blank" and page.url != "/" -%}
+            {%- if page.title == nil or page.title == "" -%}
+                {{ page.date | date: "%Y" }} | {{ name }}
+            {%- else -%}
+                {{ page.title }} | {{ name }}
+            {%- endif -%}
         {%- else -%}
-            {{ page.title }} | {{ title }}
+            {{ name }}
         {%- endif -%}
-    {%- else -%}
-        {{ title }}
-    {%- endif -%}
+    {%- endcapture -%}
+    {{ title }}
     </title>
     <meta name="author" content="{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}" />
     <meta name="description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
