@@ -17,7 +17,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
     {%- capture name -%}{{ site.first_name }} {{ site.last_name }}{%- endcapture -%}
     {%- capture title -%}
         {% if page.url == '/blog/index.html' %}
@@ -32,8 +31,7 @@
             {{ name }}
         {%- endif -%}
     {%- endcapture -%}
-    {{ title }}
-    </title>
+    <title>{{ title }}</title>
     <meta name="author" content="{{ site.first_name }} {{ site.last_name }}" />
     <meta name="description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
 {%- if page.keywords or site.keywords %}
