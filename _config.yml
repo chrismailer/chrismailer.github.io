@@ -7,7 +7,7 @@ first_name: Christopher
 last_name: Mailer
 email: christophermailer@icloud.com
 description: A website about me and my projects
-footer_text: >
+footer_text: 
 keywords: chrismailer, christopher, mailer, africa, profile, portfolio, engineering, design, research, robotics, mechatronics
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
