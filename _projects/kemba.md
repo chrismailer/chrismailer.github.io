@@ -7,7 +7,7 @@ importance: 1
 category: work
 ---
 
-For my masters in UCT's robotics lab I built this legged robot which we affectionately called Kemba. The project is probably best documented in my [thesis](https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf). Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.
+For my masters in UCT's robotics lab I built and designed the control algorithms for a legged robot which we affectionately called Kemba. The project is probably best documented in my [thesis](https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf). Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.
 
 Here are videos of Kemba accelerating from rest and bounding around the lab on the [planarising boom](https://chrismailer.github.io/projects/boom/) I also built.
 <div class="row">
