@@ -70,7 +70,8 @@ category: work
     Centre pivot with encoders and 4:1 timing belt reduction (Left), and sectioned view (Right) of the elevation axis joint showing stainless steel shafts in yellow and bearings in red.
 </div>
 
-
-{% endraw %}
-
 {% include youtube.html id="u2Hn26uojoM" %}
+
+
+
+
