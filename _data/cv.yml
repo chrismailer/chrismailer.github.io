@@ -15,7 +15,7 @@
       description:
         - Independent research project on the design and optimal control of a novel planar legged robot which combines proprioceptive and pneumatic actuators for agile manoeuvres.
         - Awarded three prestigious merit-based scholarships and fellowships.
-        - Due to present results at a top robotics research conference (See publications)
+        - Due to present results at a <a href="https://www.icra2023.org">top robotics research conference</a> (See publications)
     - title: BSc Mechanical and Mechatronic Engineering
       institution: University of Cape Town
       year: July 2021
@@ -75,14 +75,12 @@
         - Dean’s Merit List
 
 - title: Skills
-  type: nested_list
+  type: map
   contents:
-    - title: Programming Languages
-      items: 
-        - MATLAB, Python, C/C++, R, Swift
-    - title: Software
-      items:
-        - SolidWorks, MATLAB
+    - name: Software
+      value: SolidWorks, MATLAB
+    - name: Programming Languages
+      value: MATLAB, Python, C/C++, R, Swift
 
 - title: Hobbies
   type: list
