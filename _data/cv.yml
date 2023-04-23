@@ -39,7 +39,7 @@
       institution: University of Cape Town – Robotics Lab
       year: Nov 2019 - Dec 2019
       description:
-        - Designed and manufactured a 2kg dynamically balanced hopping robot for a PhD researcher in a 6-week timeframe.
+        - Designed and manufactured a <a href="https://www.youtube.com/watch?v=VbLtQkqtwZ0">2kg dynamically balanced hopping robot</a> for a PhD researcher in a 6-week timeframe.
         - Utilized CNC machining, laser cutting, bending, and electrical discharge machining to produce components.
         - Implemented precise motion control with a BLDC FOC controller and high-resolution optical encoders.
         - Conducted FEA stress analysis on robot legs to meet mass and strength specifications.
