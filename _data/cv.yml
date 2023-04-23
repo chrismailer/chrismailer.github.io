@@ -3,50 +3,46 @@
   contents:
     - name: Full Name
       value: Christopher Mailer
-    - name: Date of Birth
-      value: 22nd October 1998
     - name: Languages
       value: English (Native), Afrikaans (High School)
 
 - title: Education
   type: time_table
   contents:
-    - title: MSc Electrical Engineering (Under Examination)
+    - title: MSc Electrical Engineering
       institution: University of Cape Town
       year: June 2023
       description:
-        - Awarded prestigious merit-based Harry Crossley Research Fellowship
-        - title: Thesis titled Control of Rapid Acceleration in a Planar Legged Robot
-          contents:
-            - Mechanical Design, Optimal Control, Simulink Modelling and Simulation
-    - title: BSc Mechanical and Mechatronic Engineering (Honours)
+        - Independent research project on the design and optimal control of a novel planar legged robot which combines proprioceptive and pneumatic actuators for agile manoeuvres.
+        - Awarded three prestigious merit-based scholarships and fellowships.
+        - Due to present results at a top robotics research conference (See publications)
+    - title: BSc Mechanical and Mechatronic Engineering
       institution: University of Cape Town
       year: July 2021
       description:
-        - Grade 82% (First Class Honours and 1st in class)
-        - Awarded Class Medal in final year for highest cumulative grade
-        - Awarded SASOL Product Design Prize for Product Design course
+        - Top of class (Graduated with First Class Honours)
+        - Awarded Class Medal, SASOL Product Design Prize, and Dean’s Merit List
+        - title: Capstone Project enabeling Online Gait Adaptation of the Robotics and Agents Research Lab Hexapod Robot
 
 - title: Experience
   type: time_table
   contents:
-    - title: Technical Assistant – Robotics Lab
-      institution: University of Cape Town
-      year: Feb 2021 - Dec 2022
+    - title: Legged Robotics Researcher
+      institution: University of Cape Town - Robotics Lab
+      year: Feb 2021 - Now
       description:
-        - Led the design, controller development, and testing of a legged robot in the research lab.
-        - Responsible for Mechanical design, workshop drawings, and procurement of components.
-        - Ran experiments, collected data, and designed test setups for various projects.
-        - Control system development in Simulink on a Speedgoat Real-Time Target Machine.
-        - Communication with BLDC motors over CAN Bus, and 5-axis Force Transducer over EtherCAT.
+        - Led the full development of three experimental planar legged robots
+        -	Translating high-level system specifications into successful designs and component selection, and taking the projects through CAD design, fabrication, testing & debugging, controller development, and documentation.
+        - Presented demos of the robots to key stakeholders, attracting significant interest and funding from MathWorks
 
-    - title: Student Lab Intern – Robotics Lab
-      institution: University of Cape Town
+    - title: Mechatronics Intern
+      institution: University of Cape Town – Robotics Lab
       year: Nov 2019 - Dec 2019
       description:
-        - Robot maintenance and modification to mitigate impact failure mode in planetary gearbox.
-        - Implemented BLDC motor control with ODrive controller and optical encoders.
-        - FEA stress analysis to minimise component mass while retaining required level of rigidity.
+        - Designed and manufactured a 2kg dynamically balanced hopping robot for a PhD researcher in a 6-week timeframe.
+        - Utilized CNC machining, laser cutting, bending, and electrical discharge machining to produce components.
+        - Implemented precise motion control with a BLDC FOC controller and high-resolution optical encoders.
+        - Conducted FEA stress analysis on robot legs to meet mass and strength specifications.
 
     - title: Practical Training Course
       institution: Cape Peninsula University of Technology
@@ -54,20 +50,12 @@
       description:
         - Training in CNC programming & machining, precision metrology and measurement, electrical automation/robotics, pneumatics, welding, fitting and turning.
 
-    - title: Student Intern – Software
+    - title: Software Intern
       institution: Prescient Investment Management
-      year: Dec 2017 - Jan 2018
+      year: Nov 2017 - Dec 2018
       description:
-        - Software development in R to create a program to provide a preliminary inflation estimate from approximately 80 thousand online prices every day.
-        - Extensive work on data collection, database management, and data visualisation.
-        - Presented projects and results to senior fund managers and other stakeholders.
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Developed a program in R to provide a daily inflation estimate by analysing around 80 thousand online prices as part of an 8-week project.
+        -	Presented project results to senior fund managers and demonstrated the program's utility in improving the quality of investment decisions.
 
 - title: Honours and Awards
   type: time_table
@@ -85,21 +73,18 @@
     - year: 2017, 2018, 2019
       items:
         - Dean’s Merit List
-    - year: 2017
-      items:
-        - Mechanical Engineering I Class Medal
 
 - title: Skills
   type: nested_list
   contents:
     - title: Programming Languages
       items: 
-        - Python, C/C++, R, Swift
+        - MATLAB, Python, C/C++, R, Swift
     - title: Software
       items:
-        - SolidWorks, MATLAB, LaTeX, Git, LabVIEW
+        - SolidWorks, MATLAB
 
 - title: Hobbies
   type: list
-  contents:
+  contents: Surfing, Cycling, Sailing
     - Surfing, Sailing, Cycling
