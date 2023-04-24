@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hopper
-description: A research testbed
+description: A legged research platform
 img: assets/img/hopper/cover.jpg
 importance: 2
 category: work
