@@ -15,7 +15,7 @@ category: work
 <div class="caption">
     CAD rendering of the boom.
 </div>
-In the UCT Robotics Lab we have a number of legged robots which run around the lab. To help them balance and provide state information for control I built a custom 2.5m carbon fibre planar support boom. The design and software for the boom is documented in a section of my [thesis](https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf).
+In the UCT Robotics Lab we have a number of legged robots which run around in the experimental area. To help them balance and provide state information for control I built a custom 2.5m carbon fibre planar support boom. The design and software for the boom is documented in a section of my [thesis](https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf).
 
 The boom uses two tensioned steel cables in a parallelogram arrangement to always keep the end vertical. A Kalman filter fuses state data from the IMU on the end and the high-resolution encoders at the base to estimate the robot position, velocity, and acceleration.
 
