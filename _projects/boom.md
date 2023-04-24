@@ -3,7 +3,7 @@ layout: page
 title: Boom
 description: Planarising boom for legged robots 
 img: /assets/img/boom/end-pivot.jpg
-importance: 3
+importance: 4
 category: work
 ---
 
