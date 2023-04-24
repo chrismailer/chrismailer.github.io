@@ -4,7 +4,7 @@ title: Shunt
 description: a project with a background image
 img: assets/img/shunt-cover.jpg
 importance: 5
-category: work
+category: fun
 ---
 
 Every project has a beautiful feature showcase page.
