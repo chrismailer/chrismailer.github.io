@@ -16,6 +16,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hey! My name is Chris and I'm currently finalising my masters degree at the University fo Cape Town which I spent designing and controlling legged robots. For as long as I can remember I've been building and taking things apart. The coupling of hardware, electronics, software, and control and its ability to make a machine **come alive** has always fascinated and inspired me.
+Hey! My name is Chris and I'm currently finalising my masters degree at the University of Cape Town which I spent designing and controlling legged robots. You can read more about these robots under my [projects](https://chrismailer.github.io/projects/).
 
-When I'm not tinkering or building things, I love surfing and sailing. At the beginning of 2023 I competed in the [Cape to Rio South Atlantic yacht race](https://en.wikipedia.org/wiki/South_Atlantic_Race) which is the longest continent-to-continent yacht race in the southern hemisphere. We broke our rudder and ended up on St Helena where I jumped on another boat to Brasil, but that's a story for another time.
+When I'm not builidng things or working on robots, I love surfing and sailing. At the beginning of 2023 I competed in the [Cape to Rio South Atlantic yacht race](https://en.wikipedia.org/wiki/South_Atlantic_Race) which is the longest continent-to-continent yacht race in the southern hemisphere. We broke our rudder and ended up on the small volcanic island St Helena where I jumped on another boat to Brasil, but that's a story for another time.
