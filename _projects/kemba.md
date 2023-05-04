@@ -30,7 +30,7 @@ Here are videos of Kemba accelerating from rest and bounding around the lab on t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/leg-parts.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/leg-parts.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -39,7 +39,7 @@ Here are videos of Kemba accelerating from rest and bounding around the lab on t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/leg-open.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/leg-open.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -48,10 +48,10 @@ Here are videos of Kemba accelerating from rest and bounding around the lab on t
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-9 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/tibia.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/tibia.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-3 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/tibia-section.jpeg" title="example image" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/kemba/tibia-section.jpeg" title="example image" class="img-fluid rounded" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -60,7 +60,7 @@ Here are videos of Kemba accelerating from rest and bounding around the lab on t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/femur-halves.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/femur-halves.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -69,10 +69,10 @@ Here are videos of Kemba accelerating from rest and bounding around the lab on t
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/knee-joint.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/knee-joint.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/knee-section.jpeg" title="example image" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/kemba/knee-section.jpeg" title="example image" class="img-fluid rounded" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -81,7 +81,7 @@ Here are videos of Kemba accelerating from rest and bounding around the lab on t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/body.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/body.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -90,13 +90,13 @@ Here are videos of Kemba accelerating from rest and bounding around the lab on t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/gim-motor.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/gim-motor.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/gim-rotor.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/gim-rotor.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/kemba/gim-inside.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/kemba/gim-inside.jpeg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
