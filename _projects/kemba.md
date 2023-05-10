@@ -1,7 +1,7 @@
 ---
 layout: page
-title: MSc Thesis
-description: An electric-pneumatic legged robot
+title: Kemba
+description: Masters Thesis Project
 img: assets/img/kemba/cover.jpeg
 importance: 1
 category: work

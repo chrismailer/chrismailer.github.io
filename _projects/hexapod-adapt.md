@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hexapod Adaptation
-description: Learned gaits and online adaptation
+description: Bachelors Thesis Project
 img: assets/img/hexapod/cover.jpg
 importance: 2
 category: work
