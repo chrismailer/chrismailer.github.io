@@ -10,11 +10,11 @@ category: work
 In 2019 as part of our Mechatronics Design course (EEE3061W) we get to design a robot in teams of 4 which has to compete at some objective. It's a notoriosly challenging course with late nights, but also incredibly fun, creative and rewarding. This year we were tasked with designing a line following robot which would map out an unseen maze and solve it as fast as possible. In the team I was responsible for the mechanical design of the robot and also the embedded software running on the STM32F0 microcontroller.
 
 <div class="row">
-    <div class="col-sm mt-2 mt-md-0"></div>
-    <div class="col-sm mt-5 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.html path="assets/img/follower/cover.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-2 mt-md-0"></div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
 </div>
 <div class="caption">
     Our awesome little line following, maze solving robot!
