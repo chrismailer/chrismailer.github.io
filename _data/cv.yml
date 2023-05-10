@@ -13,7 +13,7 @@
       institution: University of Cape Town
       year: June 2023
       description:
-        - Independent research project on the design and optimal control of a novel planar legged robot which combines proprioceptive and pneumatic actuators for <a href="https://www.youtube.com/watch?v=KZ1mVP8R52g">agile manoeuvres</a>.
+        - Thesis on the design and optimal control of a novel planar legged robot which combines proprioceptive and pneumatic actuators for <a href="https://www.youtube.com/watch?v=KZ1mVP8R52g">agile manoeuvres</a>.
         - Awarded three prestigious merit-based scholarships and fellowships.
         - Due to present results at a <a href="https://www.icra2023.org">top robotics research conference</a> (See publications)
     - title: BSc Mechanical and Mechatronic Engineering
@@ -21,41 +21,25 @@
       year: July 2021
       description:
         - Top of class (Graduated with First Class Honours)
-        - Awarded Class Medal, SASOL Product Design Prize, and Dean’s Merit List
-        - Capstone Project enabeling Online Gait Adaptation of the Robotics and Agents Research Lab Hexapod Robot
 
 - title: Experience
   type: time_table
   contents:
-    - title: Legged Robotics Researcher
+    - title: Mechatronics Lab Engineer
       institution: University of Cape Town - Robotics Lab
       year: Feb 2021 - Now
-      description:
-        - Led the full development of three experimental planar legged robots
-        - Translating high-level system specifications into successful designs and component selection, and taking the projects through CAD design, fabrication, testing & debugging, controller development, and documentation.
-        - Presented demos of the robots to key stakeholders, attracting significant interest and funding from MathWorks
 
-    - title: Mechatronics Intern
+    - title: Mechatronics Lab Intern
       institution: University of Cape Town – Robotics Lab
       year: Nov 2019 - Dec 2019
-      description:
-        - Designed and manufactured a <a href="https://www.youtube.com/watch?v=VbLtQkqtwZ0">2kg dynamically balanced hopping robot</a> for a PhD researcher in a 6-week timeframe.
-        - Utilized CNC machining, laser cutting, bending, and electrical discharge machining to produce components.
-        - Implemented precise motion control with a BLDC FOC controller and high-resolution optical encoders.
-        - Conducted FEA stress analysis on robot legs to meet mass and strength specifications.
 
     - title: Practical Training Course
       institution: Cape Peninsula University of Technology
       year: Nov 2018 - Dec 2018
-      description:
-        - Training in CNC programming & machining, precision metrology and measurement, electrical automation/robotics, pneumatics, welding, fitting and turning.
 
     - title: Software Intern
       institution: Prescient Investment Management
       year: Nov 2017 - Dec 2018
-      description:
-        - Developed a program in R to provide a daily inflation estimate by analysing around 80 thousand online prices as part of an 8-week project.
-        - Presented project results to senior fund managers and demonstrated the program’s utility in improving the quality of investment decisions.
 
 - title: Honours and Awards
   type: time_table
@@ -85,4 +69,3 @@
 - title: Hobbies
   type: list
   contents: Surfing, Cycling, Sailing
-    - Surfing, Sailing, Cycling
