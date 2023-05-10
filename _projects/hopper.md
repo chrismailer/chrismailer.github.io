@@ -3,7 +3,7 @@ layout: page
 title: Hopper
 description: A legged research platform
 img: assets/img/hopper/cover.jpg
-importance: 2
+importance: 3
 category: work
 ---
 

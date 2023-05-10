@@ -3,7 +3,7 @@ layout: page
 title: Hexapod Adaptation
 description: Learned gaits and online adaptation
 img: assets/img/hexapod/cover.jpg
-importance: 3
+importance: 2
 category: work
 ---
 
