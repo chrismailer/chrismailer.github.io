@@ -191,7 +191,10 @@
     Simplified schematic of the shunt regulator circuit.
 </div>
 
-<p>The PWM signal is linearly ramped up based on the bus voltage providing a smooth fade in or out as opposed to instantly dumping the maximum possible power, over 1.2kW, through the brake resistor for even just small voltage spikes.</p>
+<p>The PWM signal is linearly ramped up based on the bus voltage providing a smooth fade in or out as opposed to instantly dumping the maximum possible power, over 1.2kW, through the brake resistor for even just small voltage spikes. The duty cyce and ramp is determined with this line in the microcontroller code.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">brake_duty</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">max</span><span class="p">((</span><span class="n">bus_voltage</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">overvoltage_ramp_end</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">),</span> <span class="mf">0.0</span><span class="n">f</span><span class="p">),</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">);</span>
+</code></pre></div></div>
+<p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
