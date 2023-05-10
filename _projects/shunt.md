@@ -18,7 +18,11 @@ Two of the legged robots I have worked on use high torque BLDC motors coupled to
     Simplified schematic of the shunt regulator circuit.
 </div>
 
-The PWM signal is linearly ramped up based on the bus voltage providing a smooth fade in or out as opposed to instantly dumping the maximum possible power, over 1.2kW, through the brake resistor for even just small voltage spikes.
+The PWM signal is linearly ramped up based on the bus voltage providing a smooth fade in or out as opposed to instantly dumping the maximum possible power, over 1.2kW, through the brake resistor for even just small voltage spikes. The duty cyce and ramp is determined with this line in the microcontroller code.
+```c++
+brake_duty = min(max((bus_voltage - overvoltage_ramp_start)/(overvoltage_ramp_end - overvoltage_ramp_start), 0.0f), 1.0f);
+```
+By configuring `overvoltage_ramp_start` and `overvoltage_ramp_end` in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
