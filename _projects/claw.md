@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Ice Claw
-description: a project with no image
+description: Agulhas ice floe catcher
 img: assets/img/claw-prototype.jpg
 importance: 6
-category: work
+category: fun
 ---
+
