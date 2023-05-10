@@ -18,24 +18,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Ice Claw | Christopher Mailer</title>
+<title>Line Follower | Christopher Mailer</title>
     <meta name="author" content="Christopher Mailer">
-    <meta name="description" content="Agulhas ice floe catcher">
+    <meta name="description" content="A line following maze solving robot">
     <meta name="keywords" content="chrismailer, christopher, mailer, africa, profile, portfolio, engineering, design, research, robotics, mechatronics">
 
     <!-- OpenGraph -->
-    <meta property="og:site_name" content="Ice Claw | Christopher Mailer">
+    <meta property="og:site_name" content="Line Follower | Christopher Mailer">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Ice Claw | Christopher Mailer">
-    <meta property="og:url" content="https://chrismailer.github.io/projects/claw/">
-    <meta property="og:description" content="Agulhas ice floe catcher">
+    <meta property="og:title" content="Line Follower | Christopher Mailer">
+    <meta property="og:url" content="https://chrismailer.github.io/projects/follower/">
+    <meta property="og:description" content="A line following maze solving robot">
     <meta property="og:image" content="/assets/img/profile.jpeg">
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Ice Claw | Christopher Mailer">
-    <meta name="twitter:description" content="Agulhas ice floe catcher">
+    <meta name="twitter:title" content="Line Follower | Christopher Mailer">
+    <meta name="twitter:description" content="A line following maze solving robot">
     <meta name="twitter:image" content="/assets/img/profile.jpeg">
     
 
@@ -47,10 +47,10 @@
           "@type": "Person",
           "name": "Christopher  Mailer"
         },
-        "url": "https://chrismailer.github.io/projects/claw/",
+        "url": "https://chrismailer.github.io/projects/follower/",
         "@type": "WebSite",
-        "description": "Agulhas ice floe catcher",
-        "headline": "Ice Claw",
+        "description": "A line following maze solving robot",
+        "headline": "Line Follower",
         "sameAs": ["https://scholar.google.com/citations?user=lDH4KnUAAAAJ", "https://github.com/chrismailer", "https://www.linkedin.com/in/chrismailer"],
         "name": "Christopher  Mailer",
         "@context": "https://schema.org"
@@ -82,7 +82,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://chrismailer.github.io/projects/claw/">
+    <link rel="canonical" href="https://chrismailer.github.io/projects/follower/">
     
     <!-- Dark Mode -->
     
@@ -160,12 +160,42 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Ice Claw</h1>
-            <p class="post-description">Agulhas ice floe catcher</p>
+            <h1 class="post-title">Line Follower</h1>
+            <p class="post-description">A line following maze solving robot</p>
           </header>
 
           <article>
-            
+            <p>In 2019 as part of our Mechatronics Design course (EEE3061W) we get to design a robot in teams of 4 which has to compete at some objective. It’s a notoriosly challenging course with late nights, but also incredibly fun, creative and rewarding. This year we were tasked with designing a line following robot which would map out an unseen maze and solve it as fast as possible. In the team I was responsible for the mechanical design of the robot and also the embedded software running on the STM32F0 microcontroller.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/follower/cover-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/follower/cover-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/follower/cover-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/follower/cover.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0"></div>
+</div>
+<div class="caption">
+    Our awesome little line following, maze solving robot!
+</div>
+
+<p>The part of the embedded software I found most interesting was the maze solving algorithm. We would have a chance for our robot to explore the maze and then a second run to navigate through the fastest route and solve it in the shortest time possible. Crucially the maze would not have any loops to keep things only moderately challenging.</p>
+
+<p>I opted to use <a href="https://en.wikipedia.org/wiki/Lee_algorithm" rel="external nofollow noopener" target="_blank">Lee’s Algorithm</a> because once the maze has been fully traversed it is guaranteed to have found the shortest route. It is also simple to implement in C++ and simplicity was key for keeping bugs to a minimum! The maze was stored in a 2D array with each element corresponding to a physical node in the maze. As the robot moves along a branch from the start point it increments a counter and stores the value at the correwsponding node. If a route goes over an existing value it can only be overwritten of the value is smaller. This effectively produces a distance map along all of the paths. Once you have reached the end of the maze you can then traverse along the maze simply by following the lowest distance values! It’s an awesome alogithm and I loved the simplicity. The main downside is that you need to store the whole maze so we were very quickly bumping up against the memory limit in the STM32F0 and had to simplify a few things.</p>
 
           </article>
 
