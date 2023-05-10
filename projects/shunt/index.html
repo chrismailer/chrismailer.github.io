@@ -20,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Shunt | Christopher Mailer</title>
     <meta name="author" content="Christopher Mailer">
-    <meta name="description" content="a project with a background image">
+    <meta name="description" content="An automatic shunt regulator">
     <meta name="keywords" content="chrismailer, christopher, mailer, africa, profile, portfolio, engineering, design, research, robotics, mechatronics">
 
     <!-- OpenGraph -->
@@ -28,14 +28,14 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Shunt | Christopher Mailer">
     <meta property="og:url" content="https://chrismailer.github.io/projects/shunt/">
-    <meta property="og:description" content="a project with a background image">
+    <meta property="og:description" content="An automatic shunt regulator">
     <meta property="og:image" content="/assets/img/profile.jpeg">
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Shunt | Christopher Mailer">
-    <meta name="twitter:description" content="a project with a background image">
+    <meta name="twitter:description" content="An automatic shunt regulator">
     <meta name="twitter:image" content="/assets/img/profile.jpeg">
     
 
@@ -49,7 +49,7 @@
         },
         "url": "https://chrismailer.github.io/projects/shunt/",
         "@type": "WebSite",
-        "description": "a project with a background image",
+        "description": "An automatic shunt regulator",
         "headline": "Shunt",
         "sameAs": ["https://scholar.google.com/citations?user=lDH4KnUAAAAJ", "https://github.com/chrismailer", "https://www.linkedin.com/in/chrismailer"],
         "name": "Christopher  Mailer",
@@ -161,11 +161,11 @@
 
           <header class="post-header">
             <h1 class="post-title">Shunt</h1>
-            <p class="post-description">a project with a background image</p>
+            <p class="post-description">An automatic shunt regulator</p>
           </header>
 
           <article>
-            <p>Two of the legged robots I have worked on use high torque BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful manoever where lots of energy need to be dissipated. To fix this I build an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/" rel="external nofollow noopener" target="_blank">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimising power dissipation during conduction.</p>
+            <p>Two of the legged robots I have worked on use high torque BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful manoever where lots of energy need to be dissipated. To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/" rel="external nofollow noopener" target="_blank">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimising power dissipation during conduction.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -197,6 +197,7 @@
 <p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
 
 <div class="row">
+    <div class="col-sm mt-3 mt-md-0"></div>
     <div class="col-sm mt-3 mt-md-0">
         <figure>
 
@@ -208,13 +209,14 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/shunt/cover.jpg" class="img-fluid rounded" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/shunt/cover.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
 </figure>
 
     </div>
+    <div class="col-sm mt-3 mt-md-0"></div>
 </div>
 <div class="caption">
     Working circuit on prototype board.
