@@ -4,7 +4,7 @@ title: Line Follower
 description: A line following maze solving robot
 img: assets/img/follower/cover.jpg
 importance: 4
-category: fun
+category: work
 ---
 
 In 2019 as part of our Mechatronics Design course (EEE3061W) we get to design a robot in teams of 4 which has to compete at some objective. It's a notoriosly challenging course with late nights, but also incredibly fun, creative and rewarding. This year we were tasked with designing a line following robot which would map out an unseen maze and solve it as fast as possible. In the team I was responsible for the mechanical design of the robot and also the embedded software running on the STM32F0 microcontroller.

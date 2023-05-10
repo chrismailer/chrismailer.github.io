@@ -4,7 +4,7 @@ title: Ice Claw
 description: Agulhas ice floe catcher
 img: assets/img/claw-prototype.jpg
 importance: 6
-category: fun
+category: work
 ---
 
 For this project a group of 4 of us won a proposal at the end of 2018 from the Polar Arctic Research Group to design a better system for picking up large ice floes onto the S.A Agulhas II for core sample drilling. The S.A Agulhas II is a research vessel and polar supply ship which takes researches, equipment and supplies down to Marion Island and the Antarctic Ice Shelf South African bases. It is famously known for being the mother ship for the Endurance22 Expidition when Sir Ernest Shackleton's ship, Endurance was located.

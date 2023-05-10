@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Boom
-description: Planar support for legged robots
+description: Planar support and state feedback for legged robots
 img: /assets/img/boom/end-pivot.jpg
 importance: 4
 category: work
