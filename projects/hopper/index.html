@@ -220,7 +220,34 @@
 <p>This video shows the first version of the hopper. I also built a newer version while working part-time alongside my masters which used improved actuators, had stronger and more rigid legs, and a much simpler and lighter design.</p>
 
 <h2 id="leg-impedance-control">Leg Impedance Control</h2>
-<p>For dynamic robots like the hopper, controlling the force produced at the foot, and thus the body acceleration, is far more important than precisely controlling foot position. For this reason the leg is controlled with an impedance (force) controller in polar coordinates with a radial length $r$ and an angle $\phi$ from the body to the ankle, kind of like a pogo stick. Force in this polar frame is controlled by computing the required left $\tau_L$ and right $\tau_R$ motor torques from the desired radial force $F_r$ and torque $\tau_{\phi}$ using the leg polar Jacobian $J_p$.</p>
+
+<div class="row">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/hopper/leg-kinematics-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/hopper/leg-kinematics-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/hopper/leg-kinematics-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/hopper/leg-kinematics.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+</div>
+<div class="caption">
+    Kinematic diagram of the Hopper v2 leg
+</div>
+
+<p>For dynamic robots like the hopper, controlling the force produced at the foot, and thus the body acceleration, is far more important than precisely controlling foot position. For this reason the leg is controlled with an impedance (force) controller in polar coordinates with a radial length $r$ and an angle $\phi$ from the body to the ankle, kind of like a pogo stick. Force in this polar frame is controlled by computing the required left $\tau_L$ and right $\tau_R$ motor torques from the desired radial force $F_r$ and torque $\tau_{\phi}$ using the leg polar Jacobian $J_p$ calculated from the leg forward kinematics.</p>
 
 \[\begin{bmatrix}
 \tau_L \\
