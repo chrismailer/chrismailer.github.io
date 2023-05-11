@@ -39,7 +39,7 @@ This video shows the first version of the hopper. I also built a newer version w
     Kinematic diagram of the Hopper v2 leg
 </div>
 
-For dynamic robots like the hopper, controlling the force produced at the foot, and thus the body acceleration, is far more important than precisely controlling foot position. For this reason the leg is controlled with an impedance (force) controller in polar coordinates with a radial length $r$ and an angle $\phi$ from the body to the ankle, kind of like a pogo stick. Force in this polar frame is controlled by computing the required left $\tau_L$ and right $\tau_R$ motor torques from the desired radial force $F_r$ and torque $\tau_{\phi}$ using the leg polar Jacobian $J_p$ calculated from the leg forward kinematics.
+For dynamic robots like the hopper, controlling the force produced at the foot, and thus the body acceleration, is far more important than precisely controlling foot position. For this reason the leg is controlled with an impedance (force) controller in polar coordinates with a radial length $$r$$ and an angle $$\phi$$ from the body to the ankle, kind of like a pogo stick. Force in this polar frame is controlled by computing the required left $$\tau_L$$ and right $$\tau_R$$ motor torques from the desired radial force $$F_r$$ and torque $$\tau_{\phi}$$ using the leg polar Jacobian $$J_p$$ calculated from the leg forward kinematics.
 
 $$
 \begin{bmatrix}
@@ -52,10 +52,10 @@ F_r \\
 \end{bmatrix}
 $$
 
-This ignores the mass and dynamics of the legs, but is still a reasonable approximation as the links are relatively light. A PD controller on each of the polar axes enables tracking of desired position and velocity setpoints $r_0$, $\phi_0$ and $\dot{r}_0$, $\dot{\phi}_0$.
+This ignores the mass and dynamics of the legs, but is still a reasonable approximation as the links are relatively light. A PD controller on each of the polar axes enables tracking of desired position and velocity setpoints $$r_0$$, $$\phi_0$$ and $$\dot{r}_0$$, $$\dot{\phi}_0$$.
 
 $$ F_r = K_p(r_0 - r_{leg}) + Kd_r(\dot{r_0} - \dot{r_{leg}}) + F_{thrust} $$
 
 $$ \tau_{\phi} = Kp_{\phi}(\phi_0 - \phi_{leg}) + Kd_{\phi}(\dot{\phi_0} - \dot{\phi_{leg}}) $$
 
-These PD controllers behave like a parallel spring and damper where $Kp$ is the spring stiffness with units $\frac{N}{m}$ or $\frac{Nm}{rad}$ and $Kd$ is the damping constant with units $\frac{Ns}{m}$ or $\frac{Nms}{rad}$. The radial stiffness determines how much the leg compresses during landing. Higher jump heights will need higher radial stiffness to stop the leg bottoming out (think pogo stick). The polar angle stiffness determines how quickly the leg repositions during flight. The damping constants are typically set to keep the axes more or less critically damped and avoid any oscillations.
+These PD controllers behave like a parallel spring and damper where $$Kp$$ is the spring stiffness with units $$\frac{N}{m}$$ or $$\frac{Nm}{rad}$$ and $$Kd$$ is the damping constant with units $$\frac{Ns}{m}$$ or $$\frac{Nms}{rad}$$. The radial stiffness determines how much the leg compresses during landing. Higher jump heights will need higher radial stiffness to stop the leg bottoming out (think pogo stick). The polar angle stiffness determines how quickly the leg repositions during flight. The damping constants are typically set to keep the axes more or less critically damped and avoid any oscillations.
