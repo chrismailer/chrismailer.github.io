@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hexapod Adaptation
-description: Bachelors Thesis Project
+description: Bachelors thesis project
 img: assets/img/hexapod/cover.jpg
 importance: 2
 category: work
