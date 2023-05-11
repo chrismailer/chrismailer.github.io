@@ -27,7 +27,19 @@ At the end of 2019 I built a 2kg hopping robot for a PhD researcher as part of a
 This video shows the first version of the hopper. I also built a newer version while working part-time alongside my masters which used improved actuators, had stronger and more rigid legs, and a much simpler and lighter design.
 
 ## Leg Impedance Control
-For dynamic robots like the hopper, controlling the force produced at the foot, and thus the body acceleration, is far more important than precisely controlling foot position. For this reason the leg is controlled with an impedance (force) controller in polar coordinates with a radial length $r$ and an angle $\phi$ from the body to the ankle, kind of like a pogo stick. Force in this polar frame is controlled by computing the required left $\tau_L$ and right $\tau_R$ motor torques from the desired radial force $F_r$ and torque $\tau_{\phi}$ using the leg polar Jacobian $J_p$.
+
+<div class="row">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/hopper/leg-kinematics.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+</div>
+<div class="caption">
+    Kinematic diagram of the Hopper v2 leg
+</div>
+
+For dynamic robots like the hopper, controlling the force produced at the foot, and thus the body acceleration, is far more important than precisely controlling foot position. For this reason the leg is controlled with an impedance (force) controller in polar coordinates with a radial length $r$ and an angle $\phi$ from the body to the ankle, kind of like a pogo stick. Force in this polar frame is controlled by computing the required left $\tau_L$ and right $\tau_R$ motor torques from the desired radial force $F_r$ and torque $\tau_{\phi}$ using the leg polar Jacobian $J_p$ calculated from the leg forward kinematics.
 
 $$
 \begin{bmatrix}
