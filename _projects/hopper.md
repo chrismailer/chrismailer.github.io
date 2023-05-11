@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: Hopper
 description: A legged research platform
 img: assets/img/hopper/cover.jpg
