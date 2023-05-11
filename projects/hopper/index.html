@@ -156,16 +156,52 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- page.html -->
-        <div class="post">
+      <!-- _layouts/post.html -->
 
-          <header class="post-header">
-            <h1 class="post-title">Hopper</h1>
-            <p class="post-description">A legged research platform</p>
-          </header>
+<div class="post">
 
-          <article>
-            <h2 id="introduction">Introduction</h2>
+  <header class="post-header">
+    <h1 class="post-title">Hopper</h1>
+    <p class="post-meta">May 11, 2023</p>
+    <p class="post-tags">
+      <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
+        ·  
+        <a href="/blog/category/work">
+          <i class="fas fa-tag fa-sm"></i> work</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="introduction">Introduction</h2>
+
+<div class="row">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/hopper/cover-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/hopper/cover-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/hopper/cover-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/hopper/cover.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+</div>
+<div class="caption">
+    Redesigned hopper mounted on the boom.
+</div>
+
 <p>At the end of 2019 I built a 2kg hopping robot for a PhD researcher as part of a 6-week internship for the UCT Robotics Lab. When I joined the lab full-time I took over the project again and ported the system over to the Lab’s new Simulink Real-Time Target Machine using the CAN communication protocol, implemented impedance control, and built the Raibert-based control system for consistient hopping and velocity control. You can see the robot hopping and reacting to pushes in this video while it tries to stay in the same spot.</p>
 
 <div class="embed-container">
@@ -192,36 +228,53 @@
 
 <p>This video shows the first version of the hopper. I also built a newer version while working part-time alongside my masters which used improved actuators, had stronger and more rigid legs, and a much simpler and lighter design.</p>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/hopper/cover-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/hopper/cover-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/hopper/cover-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/hopper/cover.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Redesigned hopper mounted on the boom.
-</div>
-
 <h2 id="control">Control</h2>
 <p>Add controller details here…</p>
 
-          </article>
+  </article>
 
-        </div>
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/displaying-external-posts-on-your-al-folio-blog/">Displaying External Posts on Your al-folio Blog</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/giscus-comments/">a post with giscus comments</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/redirect/">a post with redirect</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2021/diagrams/">a post with diagrams</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2021/distill/">a distill-style blog post</a>
+  </li>
+
+</div>
 
     </div>
 
