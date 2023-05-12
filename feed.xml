@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chrismailer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chrismailer.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-12T15:50:11+00:00</updated><id>https://chrismailer.github.io/feed.xml</id><title type="html">blank</title><subtitle>A website about me and my projects</subtitle><entry><title type="html">a post with table of contents on a sidebar</title><link href="https://chrismailer.github.io/blog/2023/sidebar-table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents on a sidebar" /><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>https://chrismailer.github.io/blog/2023/sidebar-table-of-contents</id><content type="html" xml:base="https://chrismailer.github.io/blog/2023/sidebar-table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chrismailer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chrismailer.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-12T15:59:35+00:00</updated><id>https://chrismailer.github.io/feed.xml</id><title type="html">blank</title><subtitle>A website about me and my projects</subtitle><entry><title type="html">a post with table of contents on a sidebar</title><link href="https://chrismailer.github.io/blog/2023/sidebar-table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents on a sidebar" /><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>https://chrismailer.github.io/blog/2023/sidebar-table-of-contents</id><content type="html" xml:base="https://chrismailer.github.io/blog/2023/sidebar-table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p>
 
 <h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
 
@@ -26,7 +26,302 @@
 
 <h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3>
 
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><category term="sidebar" /><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">Hopper</title><link href="https://chrismailer.github.io/blog/2022/images/" rel="alternate" type="text/html" title="Hopper" /><published>2022-11-25T10:00:00+00:00</published><updated>2022-11-25T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/images</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/images/"><![CDATA[<p>This is an example post with image galleries.</p>
+<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><category term="sidebar" /><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">Kemba</title><link href="https://chrismailer.github.io/blog/2022/kemba/" rel="alternate" type="text/html" title="Kemba" /><published>2022-12-27T10:00:00+00:00</published><updated>2022-12-27T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/kemba</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/kemba/"><![CDATA[<p>For my masters in UCT’s <a href="https://www.africanroboticsunit.com">robotics lab</a> I built and designed the control algorithms for a legged robot which we affectionately called Kemba. The design, simulation and control aspects of this project are best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">thesis</a>. Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.</p>
+
+<p>Here are videos of Kemba accelerating from rest and bounding around the lab on the <a href="https://chrismailer.github.io/projects/boom/">planarising boom</a> I also built.</p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <div class="embed-container">
+    <iframe width="640" height="390" src="https://www.youtube.com/embed/KZ1mVP8R52g" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <div class="embed-container">
+    <iframe width="640" height="390" src="https://www.youtube.com/embed/u2Hn26uojoM" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+    </div>
+</div>
+<div class="caption">
+    A video of the robot accelerating from rest directly into a fast bound and running around the lab on the planarising boom.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/leg-parts-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/leg-parts-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/leg-parts-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/leg-parts.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Fleshy machined aluminium parts for the legs.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/leg-open-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/leg-open-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/leg-open-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/leg-open.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Partially disassembled leg with second femur half removed showing piston closed kinematic chain arrangement.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-9 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/tibia-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/tibia-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/tibia-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/tibia.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-3 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/tibia-section-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/tibia-section-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/tibia-section-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/tibia-section.jpeg" class="img-fluid rounded" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Tibia with press fit bearings and foot (Left) and section view showing I-beam cross section (Right).
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/femur-halves-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/femur-halves-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/femur-halves-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/femur-halves.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Separated femur halves with inserted steel knee shaft showing internal thin walled box shape and fastener bosses.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/knee-joint-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/knee-joint-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/knee-joint-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/knee-joint.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/knee-section-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/knee-section-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/knee-section-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/knee-section.jpeg" class="img-fluid rounded" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Exposed knee joint (Left) and cross section (Right) showing the bearings in red, tibia in green, femur in blue, and hollow steel knee shaft in yellow.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/body-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/body-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/body-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/body.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Sheet metal halves which make up the front (Top) and back (Bottom) of the body with mounted hip motors, solenoid valves, and signal DIN connectors.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/gim-motor-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/gim-motor-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/gim-motor-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/gim-motor.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/gim-rotor-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/gim-rotor-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/gim-rotor-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/gim-rotor.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/gim-inside-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/gim-inside-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/gim-inside-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/kemba/gim-inside.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    GIM8115-6 actuator (Left) with casing removed to show the back of the rotor (Middle) and it’s large 19mm stack length (Right).
+</div>]]></content><author><name></name></author><category term="work" /><summary type="html"><![CDATA[My masters thesis project]]></summary></entry><entry><title type="html">Hopper</title><link href="https://chrismailer.github.io/blog/2022/images/" rel="alternate" type="text/html" title="Hopper" /><published>2022-11-25T10:00:00+00:00</published><updated>2022-11-25T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/images</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/images/"><![CDATA[<p>This is an example post with image galleries.</p>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
