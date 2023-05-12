@@ -54,7 +54,7 @@
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
     <meta name="twitter:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
     {% if page.og_image or site.og_image -%}
     <meta name="twitter:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
@@ -88,6 +88,10 @@
     {%- endif -%}
     {%- if site.research_gate_profile -%}
         {%- capture link -%}https://www.researchgate.net/profile/{{site.research_gate_profile}}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.scopus_id -%}
+        {%- capture link -%}https://www.scopus.com/authid/detail.uri?authorId={{site.scopus_id}}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
     {%- if site.github_username -%}
