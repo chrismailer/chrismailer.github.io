@@ -84,6 +84,9 @@
     <link rel="apple-touch-icon" href="/assets/favicon/favicon-180.png" sizes="180x180">
 
     
+    <!-- Sidebar Table of Contents -->
+    <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
+    
     
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -161,7 +164,15 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <!-- _layouts/post.html -->
+        
+        <div class="row">
+          <!-- sidebar, which will move to the top on a small screen -->
+          <div class="col-sm-3">
+            <nav id="toc-sidebar" class="sticky-top"></nav>
+          </div>
+          <!-- main content area -->
+          <div class="col-sm-9">
+            <!-- _layouts/post.html -->
 
 <div class="post">
 
@@ -310,8 +321,17 @@ F_r \\
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/sidebar-table-of-contents/">a post with table of contents on a sidebar</a>
   </li>
 
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/images/">Hopper</a>
+  </li>
+
 </div>
 
+          </div>
+        </div>
+        
       
     </div>
 
@@ -339,6 +359,9 @@ F_r \\
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script>
+  <!-- Sidebar Table of Contents -->
+  <script defer src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
 
   <!-- Bootstrap Table -->
   <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
