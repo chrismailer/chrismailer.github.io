@@ -18,24 +18,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>work | Christopher Mailer</title>
+<title>Automatic Shunt Regulator | Christopher Mailer</title>
     <meta name="author" content="Christopher Mailer">
-    <meta name="description" content="A website about me and my projects">
+    <meta name="description" content="An automatic shunt regulator for regenerative braking on a power supply">
     <meta name="keywords" content="chrismailer, christopher, mailer, africa, profile, portfolio, engineering, design, research, robotics, mechatronics">
 
     <!-- OpenGraph -->
-    <meta property="og:site_name" content="work | Christopher Mailer">
+    <meta property="og:site_name" content="Automatic Shunt Regulator | Christopher Mailer">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="work | Christopher Mailer">
-    <meta property="og:url" content="https://chrismailer.github.io/blog/category/work/">
-    <meta property="og:description" content="A website about me and my projects">
+    <meta property="og:title" content="Automatic Shunt Regulator | Christopher Mailer">
+    <meta property="og:url" content="https://chrismailer.github.io/blog/2022/shunt/">
+    <meta property="og:description" content="An automatic shunt regulator for regenerative braking on a power supply">
     <meta property="og:image" content="/assets/img/profile.jpeg">
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="work">
-    <meta name="twitter:description" content="A website about me and my projects">
+    <meta name="twitter:title" content="Automatic Shunt Regulator">
+    <meta name="twitter:description" content="An automatic shunt regulator for regenerative braking on a power supply">
     <meta name="twitter:image" content="/assets/img/profile.jpeg">
     
 
@@ -47,10 +47,10 @@
           "@type": "Person",
           "name": "Christopher  Mailer"
         },
-        "url": "https://chrismailer.github.io/blog/category/work/",
+        "url": "https://chrismailer.github.io/blog/2022/shunt/",
         "@type": "WebSite",
-        "description": "A website about me and my projects",
-        "headline": "work",
+        "description": "An automatic shunt regulator for regenerative braking on a power supply",
+        "headline": "Automatic Shunt Regulator",
         "sameAs": ["https://scholar.google.com/citations?user=lDH4KnUAAAAJ", "https://github.com/chrismailer", "https://www.linkedin.com/in/chrismailer"],
         "name": "Christopher  Mailer",
         "@context": "https://schema.org"
@@ -87,7 +87,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://chrismailer.github.io/blog/category/work/">
+    <link rel="canonical" href="https://chrismailer.github.io/blog/2022/shunt/">
     
     <!-- Dark Mode -->
     
@@ -161,27 +161,126 @@
     <!-- Content -->
     <div class="container mt-5">
       
-        <div class="post">
+        <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-tag fa-sm"></i> work </h1>
-    <p class="post-description"> an archive of posts in this category </p>
+    <h1 class="post-title">Automatic Shunt Regulator</h1>
+    <p class="post-meta">August 16, 2022</p>
+    <p class="post-tags">
+      <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
+        ·  
+        <a href="/blog/tag/electronics">
+          <i class="fas fa-hashtag fa-sm"></i> electronics</a>  
+          
+        ·  
+        <a href="/blog/category/electronics">
+          <i class="fas fa-tag fa-sm"></i> electronics</a>  
+          <a href="/blog/category/control">
+          <i class="fas fa-tag fa-sm"></i> control</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Dec 27, 2022</th>
-          <td>
-              <a class="post-link" href="/blog/2022/kemba/">Kemba</a>
-          </td>
-        </tr>
-      
-      </table>
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>Two of the legged robots I have worked on use high-current BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful maneuver where lots of energy need to be dissipated. To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/" rel="external nofollow noopener" target="_blank">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimizing power dissipation during conduction.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/shunt/schematic-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/shunt/schematic-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/shunt/schematic-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/shunt/schematic.png" class="img-fluid rounded" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Simplified schematic of the shunt regulator circuit.
+</div>
+
+<p>The PWM signal is linearly ramped up based on the bus voltage providing a smooth fade in or out as opposed to instantly dumping the maximum possible power, over 1.2kW, through the brake resistor for even just small voltage spikes. The duty cycle and ramp is determined with this line in the microcontroller code.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">brake_duty</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">max</span><span class="p">((</span><span class="n">bus_voltage</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">overvoltage_ramp_end</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">),</span> <span class="mf">0.0</span><span class="n">f</span><span class="p">),</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">);</span>
+</code></pre></div></div>
+<p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/shunt/cover-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/shunt/cover-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/shunt/cover-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/shunt/cover.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0"></div>
+</div>
+<div class="caption">
+    Working circuit on prototype board.
+</div>
+
     </div>
   </article>
+
+
+  
+    
+    <br>
+    <hr>
+    <br>
+    <ul class="list-disc pl-8"></ul>
+
+    <!-- Adds related posts to the end of an article -->
+    <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2>
+    <p class="mb-2">Here are some more articles you might like to read next:</p>
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/kemba/">Kemba</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/hopper/">A Hopping Robot</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2021/boom/">Robot Planarising Boom</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2020/hexapod-adapt/">A robot that can adapt like an animal</a>
+  </li>
 
 </div>
 

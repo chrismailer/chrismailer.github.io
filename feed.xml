@@ -1,32 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chrismailer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chrismailer.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-12T16:04:21+00:00</updated><id>https://chrismailer.github.io/feed.xml</id><title type="html">blank</title><subtitle>A website about me and my projects</subtitle><entry><title type="html">a post with table of contents on a sidebar</title><link href="https://chrismailer.github.io/blog/2023/sidebar-table-of-contents/" rel="alternate" type="text/html" title="a post with table of contents on a sidebar" /><published>2023-04-25T14:14:00+00:00</published><updated>2023-04-25T14:14:00+00:00</updated><id>https://chrismailer.github.io/blog/2023/sidebar-table-of-contents</id><content type="html" xml:base="https://chrismailer.github.io/blog/2023/sidebar-table-of-contents/"><![CDATA[<p>This post shows how to add a table of contents as a sidebar.</p>
-
-<h2 id="adding-a-table-of-contents">Adding a Table of Contents</h2>
-
-<p>To add a table of contents to a post as a sidebar, simply add</p>
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
-  <span class="na">sidebar</span><span class="pi">:</span> <span class="s">left</span>
-</code></pre></div></div>
-<p>to the front matter of the post. The table of contents will be automatically generated from the headings in the post. If you wish to display the sidebar to the right, simply change <code class="language-plaintext highlighter-rouge">left</code> to <code class="language-plaintext highlighter-rouge">right</code>.</p>
-
-<h3 id="example-of-sub-heading-1">Example of Sub-Heading 1</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
-
-<h3 id="example-of-another-sub-heading-1">Example of another Sub-Heading 1</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
-
-<h2 data-toc-text="Customizing" id="customizing-your-table-of-contents">Customizing Your Table of Contents</h2>
-
-<p>If you want to learn more about how to customize the table of contents of your sidebar, you can check the <a href="https://afeld.github.io/bootstrap-toc/">bootstrap-toc</a> documentation. Notice that you can even customize the text of the heading that will be displayed on the sidebar.</p>
-
-<h3 id="example-of-sub-heading-2">Example of Sub-Heading 2</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>
-
-<h3 id="example-of-another-sub-heading-2">Example of another Sub-Heading 2</h3>
-
-<p>Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.</p>]]></content><author><name></name></author><category term="sample-posts" /><category term="toc" /><category term="sidebar" /><summary type="html"><![CDATA[an example of a blog post with table of contents on a sidebar]]></summary></entry><entry><title type="html">Kemba</title><link href="https://chrismailer.github.io/blog/2022/kemba/" rel="alternate" type="text/html" title="Kemba" /><published>2022-12-27T10:00:00+00:00</published><updated>2022-12-27T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/kemba</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/kemba/"><![CDATA[<p>For my masters in UCT’s <a href="https://www.africanroboticsunit.com">robotics lab</a> I built and designed the control algorithms for a legged robot which we affectionately called Kemba. The design, simulation and control aspects of this project are best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">thesis</a>. Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chrismailer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chrismailer.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-13T14:00:28+00:00</updated><id>https://chrismailer.github.io/feed.xml</id><title type="html">blank</title><subtitle>A website about me and my projects</subtitle><entry><title type="html">Kemba</title><link href="https://chrismailer.github.io/blog/2022/kemba/" rel="alternate" type="text/html" title="Kemba" /><published>2022-12-27T10:00:00+00:00</published><updated>2022-12-27T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/kemba</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/kemba/"><![CDATA[<p>For my masters in UCT’s <a href="https://www.africanroboticsunit.com">robotics lab</a> I built and designed the control algorithms for a legged robot which we affectionately called Kemba. The design, simulation and control aspects of this project are best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">thesis</a>. Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.</p>
 
 <p>Here are videos of Kemba accelerating from rest and bounding around the lab on the <a href="https://chrismailer.github.io/projects/boom/">planarising boom</a> I also built.</p>
 <div class="row justify-content-sm-center">
@@ -321,150 +293,7 @@
 </div>
 <div class="caption">
     GIM8115-6 actuator (Left) with casing removed to show the back of the rotor (Middle) and it’s large 19mm stack length (Right).
-</div>]]></content><author><name></name></author><category term="work" /><summary type="html"><![CDATA[My masters thesis project]]></summary></entry><entry><title type="html">Hopper</title><link href="https://chrismailer.github.io/blog/2022/images/" rel="alternate" type="text/html" title="Hopper" /><published>2022-11-25T10:00:00+00:00</published><updated>2022-11-25T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/images</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/images/"><![CDATA[<p>This is an example post with image galleries.</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/9-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/9-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/9-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/9.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/7-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/7-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/7-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
-</div>
-
-<p>Images can be made zoomable.
-Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</code> to <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> tags that you want to make zoomable.</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/8-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/8-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/8-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/8.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/10-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/10-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/10-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/10.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-
-<p>The rest of the images in this post are all zoomable, arranged into different mini-galleries.</p>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/11-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/11-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/11-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/12-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/12-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/12-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/12.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/7-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/7-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/7-1400.webp" />
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>]]></content><author><name></name></author><category term="robot" /><category term="impedance-control" /><category term="formatting" /><category term="images" /><summary type="html"><![CDATA[A legged research platform]]></summary></entry><entry><title type="html">Hopper</title><link href="https://chrismailer.github.io/blog/2022/hopper/" rel="alternate" type="text/html" title="Hopper" /><published>2022-11-25T10:00:00+00:00</published><updated>2022-11-25T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/hopper</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/hopper/"><![CDATA[<h2 id="introduction">Introduction</h2>
+</div>]]></content><author><name></name></author><category term="legged-robot" /><category term="control" /><summary type="html"><![CDATA[My masters thesis project]]></summary></entry><entry><title type="html">A Hopping Robot</title><link href="https://chrismailer.github.io/blog/2022/hopper/" rel="alternate" type="text/html" title="A Hopping Robot" /><published>2022-11-25T10:00:00+00:00</published><updated>2022-11-25T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/hopper</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/hopper/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <div class="row">
     <div class="col-sm-3 mt-3 mt-md-0"></div>
@@ -563,4 +392,307 @@ F_r \\
 
 \[\tau_{\phi} = Kp_{\phi}(\phi_0 - \phi_{leg}) + Kd_{\phi}(\dot{\phi_0} - \dot{\phi_{leg}})\]
 
-<p>These PD controllers behave like a parallel spring and damper where \(Kp\) is the spring stiffness with units \(\frac{N}{m}\) or \(\frac{Nm}{rad}\) and \(Kd\) is the damping constant with units \(\frac{Ns}{m}\) or \(\frac{Nms}{rad}\). The radial stiffness determines how much the leg compresses during landing. Higher jump heights will need higher radial stiffness to stop the leg bottoming out (think pogo stick). The polar angle stiffness determines how quickly the leg repositions during flight. The damping constants are typically set to keep the axes more or less critically damped and avoid any oscillations.</p>]]></content><author><name></name></author><category term="legged-robot" /><category term="impedance-control" /><category term="formatting" /><category term="images" /><summary type="html"><![CDATA[A legged research platform]]></summary></entry></feed>
+<p>These PD controllers behave like a parallel spring and damper where \(Kp\) is the spring stiffness with units \(\frac{N}{m}\) or \(\frac{Nm}{rad}\) and \(Kd\) is the damping constant with units \(\frac{Ns}{m}\) or \(\frac{Nms}{rad}\). The radial stiffness determines how much the leg compresses during landing. Higher jump heights will need higher radial stiffness to stop the leg bottoming out (think pogo stick). The polar angle stiffness determines how quickly the leg repositions during flight. The damping constants are typically set to keep the axes more or less critically damped and avoid any oscillations.</p>]]></content><author><name></name></author><category term="legged-robot" /><category term="impedance-control" /><category term="formatting" /><category term="images" /><summary type="html"><![CDATA[A legged research platform]]></summary></entry><entry><title type="html">Automatic Shunt Regulator</title><link href="https://chrismailer.github.io/blog/2022/shunt/" rel="alternate" type="text/html" title="Automatic Shunt Regulator" /><published>2022-08-16T00:00:00+00:00</published><updated>2022-08-16T00:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/shunt</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/shunt/"><![CDATA[<p>Two of the legged robots I have worked on use high-current BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful maneuver where lots of energy need to be dissipated. To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimizing power dissipation during conduction.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/shunt/schematic-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/shunt/schematic-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/shunt/schematic-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/shunt/schematic.png" class="img-fluid rounded" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Simplified schematic of the shunt regulator circuit.
+</div>
+
+<p>The PWM signal is linearly ramped up based on the bus voltage providing a smooth fade in or out as opposed to instantly dumping the maximum possible power, over 1.2kW, through the brake resistor for even just small voltage spikes. The duty cycle and ramp is determined with this line in the microcontroller code.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">brake_duty</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">max</span><span class="p">((</span><span class="n">bus_voltage</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">overvoltage_ramp_end</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">),</span> <span class="mf">0.0</span><span class="n">f</span><span class="p">),</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">);</span>
+</code></pre></div></div>
+<p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/shunt/cover-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/shunt/cover-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/shunt/cover-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/shunt/cover.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0"></div>
+</div>
+<div class="caption">
+    Working circuit on prototype board.
+</div>]]></content><author><name></name></author><category term="electronics" /><category term="control" /><category term="electronics" /><summary type="html"><![CDATA[An automatic shunt regulator for regenerative braking on a power supply]]></summary></entry><entry><title type="html">Robot Planarising Boom</title><link href="https://chrismailer.github.io/blog/2021/boom/" rel="alternate" type="text/html" title="Robot Planarising Boom" /><published>2021-06-17T21:00:00+00:00</published><updated>2021-06-17T21:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2021/boom</id><content type="html" xml:base="https://chrismailer.github.io/blog/2021/boom/"><![CDATA[<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/render-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/render-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/render-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/render.jpg" class="img-fluid rounded" width="auto" height="auto" title="CAD rendering of the boom" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    CAD rendering of the boom.
+</div>
+<p>In the UCT Robotics Lab we have a number of legged robots which run around in the experimental area. To help them balance and provide state information for control I built a custom 2.5m carbon fibre planar support boom. The design and software for the boom is documented in a section of my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">thesis</a>.</p>
+
+<p>The boom uses two tensioned steel cables in a parallelogram arrangement to always keep the end vertical. A Kalman filter fuses state data from the IMU on the end and the high-resolution encoders at the base to estimate the robot position, velocity, and acceleration.</p>
+
+<p>All of the parts I designed were machined in-house at UCT’s workshop. Tight tollerances were particularly important as any slop in the joints would introduce errors into the state estimates. The parts were machined from 6061 aluminium and 304 stainless steel.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/parts-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/parts-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/parts-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/parts.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="image title" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Freshly machined parts for the boom.
+</div>
+<p>To maximise both torsional and lateral rigidity, while remaining as light as possible, the boom arm is a large diameter thin walled tube, maximising the polar moment of inertia. The arm is 2.5m long and is constructed from 3 pieces of 60mm outer diameter carbon fibre tube with a wall thickness of 1.5 mm.</p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/cf-tubes-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/cf-tubes-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/cf-tubes-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/cf-tubes.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-exposed-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-exposed-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-exposed-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-exposed.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Carbon fibre tubes used in the boom arm (Left) and data cables routed through the boom end (Right).
+</div>
+<p>The boom was designed with interchangable mounting ends as some of the robots require the ability to pivot about the end while other needs to be rigidly attached. An incremental optical encoder is incorporated into the pivot enabled end to measure the movement of this additional degree of freedom. An accelerometer is mounted to both mounting ends.</p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-pivot-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-pivot-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-pivot-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-pivot.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-fixed-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-fixed-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-fixed-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-fixed.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Interchangeable boom end configurations each with their own accelerometer.
+</div>
+<p>The hollow stainless steel shafts for the elevation axis on the end insert from either side to preload the bearings in a back-to-back configuration and remove any axial slop in the joint.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-render-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-render-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-render-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-render.jpg" class="img-fluid rounded" width="auto" height="auto" title="image title" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Section view of the elevation and roll axes on the boom mounting end. Bearings are shown in red and the hollow stainless steel shafts are shown in yellow.
+</div>
+<p>The centre pivot of the boom serves a stable base which the robot will run around, as well as the primary two degrees of freedom. An incremental quadrature encoder is mounted to each of the axes, geared with a 6mm wide MXL profile timing belt for a 4:1 gear ratio to further increase angular resolution.</p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/centre-joint-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/centre-joint-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/centre-joint-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/centre-joint.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/centre-joint-render-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/centre-joint-render-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/centre-joint-render-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/centre-joint-render.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Centre pivot with encoders and 4:1 timing belt reduction (Left), and sectioned view (Right) of the elevation axis joint showing stainless steel shafts in yellow and bearings in red.
+</div>
+<p>Here you can see the boom doing its thing while <a href="https://chrismailer.github.io/projects/kemba/">Kemba</a> bounds around the lab.</p>
+<div class="embed-container">
+    <iframe width="640" height="390" src="https://www.youtube.com/embed/u2Hn26uojoM" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>]]></content><author><name></name></author><category term="design" /><category term="formatting" /><category term="images" /><summary type="html"><![CDATA[Building a support and state feedback boom for legged robots]]></summary></entry><entry><title type="html">A robot that can adapt like an animal</title><link href="https://chrismailer.github.io/blog/2020/hexapod-adapt/" rel="alternate" type="text/html" title="A robot that can adapt like an animal" /><published>2020-11-15T00:00:00+00:00</published><updated>2020-11-15T00:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2020/hexapod-adapt</id><content type="html" xml:base="https://chrismailer.github.io/blog/2020/hexapod-adapt/"><![CDATA[<p>In our final year of engineering at UCT we have the opportunity to spend the year doing a project we are interested in alongside our coursework under the guidance of an academic advisor. For my project I adapted the work from the paper <a href="https://doi.org/10.1038/nature14422">Robots that can adapt like animals</a> to make a hexapod robot learn how to quickly adapt to a broken leg. The project is best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-bachelors-thesis.pdf">thesis</a>. I also published a <a href="https://dl.acm.org/doi/abs/10.1145/3449639.3459271">paper</a> on the work.</p>
+
+<p>For this project I built a physically realistic simulation of the robot using the <a href="https://pybullet.org/wordpress/">Bullet</a> physics engine. You can find the simulation code <a href="https://github.com/chrismailer/hexapod-sim">here</a>. Using the simulator, approximately 40 million walking simulations were run on South Africa’s 1.3 petaFLOPS Lengau cluster to find different ways of walking which used each of the legs in different amounts.</p>
+
+<p>The 55 thousands hours of walking in simulation produce an experience map which was then transferred to the physcial hardware enabeling it to change the way it walks and adapt to external influences such as hardware failure or different terrain. The robot adapts quickly by trying gaits in the experience map, and based on its actual performance updates what walking behaviours it thinks will do better than others.</p>
+
+<div class="embed-container">
+    <iframe width="640" height="390" src="https://www.youtube.com/embed/VrYcNe66Zss" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<style>
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>]]></content><author><name></name></author><category term="legged-robot" /><category term="simulation" /><category term="control" /><summary type="html"><![CDATA[My bachelors thesis project]]></summary></entry></feed>

@@ -18,24 +18,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Kemba | Christopher Mailer</title>
+<title>Robot Planarising Boom | Christopher Mailer</title>
     <meta name="author" content="Christopher Mailer">
-    <meta name="description" content="My masters thesis project">
+    <meta name="description" content="Building a support and state feedback boom for legged robots">
     <meta name="keywords" content="chrismailer, christopher, mailer, africa, profile, portfolio, engineering, design, research, robotics, mechatronics">
 
     <!-- OpenGraph -->
-    <meta property="og:site_name" content="Kemba | Christopher Mailer">
+    <meta property="og:site_name" content="Robot Planarising Boom | Christopher Mailer">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Kemba | Christopher Mailer">
-    <meta property="og:url" content="https://chrismailer.github.io/blog/2022/kemba/">
-    <meta property="og:description" content="My masters thesis project">
+    <meta property="og:title" content="Robot Planarising Boom | Christopher Mailer">
+    <meta property="og:url" content="https://chrismailer.github.io/blog/2021/boom/">
+    <meta property="og:description" content="Building a support and state feedback boom for legged robots">
     <meta property="og:image" content="/assets/img/profile.jpeg">
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Kemba">
-    <meta name="twitter:description" content="My masters thesis project">
+    <meta name="twitter:title" content="Robot Planarising Boom">
+    <meta name="twitter:description" content="Building a support and state feedback boom for legged robots">
     <meta name="twitter:image" content="/assets/img/profile.jpeg">
     
 
@@ -47,10 +47,10 @@
           "@type": "Person",
           "name": "Christopher  Mailer"
         },
-        "url": "https://chrismailer.github.io/blog/2022/kemba/",
+        "url": "https://chrismailer.github.io/blog/2021/boom/",
         "@type": "WebSite",
-        "description": "My masters thesis project",
-        "headline": "Kemba",
+        "description": "Building a support and state feedback boom for legged robots",
+        "headline": "Robot Planarising Boom",
         "sameAs": ["https://scholar.google.com/citations?user=lDH4KnUAAAAJ", "https://github.com/chrismailer", "https://www.linkedin.com/in/chrismailer"],
         "name": "Christopher  Mailer",
         "@context": "https://schema.org"
@@ -87,7 +87,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://chrismailer.github.io/blog/2022/kemba/">
+    <link rel="canonical" href="https://chrismailer.github.io/blog/2021/boom/">
     
     <!-- Dark Mode -->
     
@@ -166,15 +166,19 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Kemba</h1>
-    <p class="post-meta">December 27, 2022</p>
+    <h1 class="post-title">Robot Planarising Boom</h1>
+    <p class="post-meta">June 17, 2021</p>
     <p class="post-tags">
-      <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
+      <a href="/blog/2021"> <i class="fas fa-calendar fa-sm"></i> 2021 </a>
         ·  
-        <a href="/blog/category/legged-robot">
-          <i class="fas fa-tag fa-sm"></i> legged-robot</a>  
-          <a href="/blog/category/control">
-          <i class="fas fa-tag fa-sm"></i> control</a>  
+        <a href="/blog/tag/formatting">
+          <i class="fas fa-hashtag fa-sm"></i> formatting</a>  
+          <a href="/blog/tag/images">
+          <i class="fas fa-hashtag fa-sm"></i> images</a>  
+          
+        ·  
+        <a href="/blog/category/design">
+          <i class="fas fa-tag fa-sm"></i> design</a>  
           
 
     </p>
@@ -183,36 +187,209 @@
   <article class="post-content">
     
     <div id="markdown-content">
-      <p>For my masters in UCT’s <a href="https://www.africanroboticsunit.com" rel="external nofollow noopener" target="_blank">robotics lab</a> I built and designed the control algorithms for a legged robot which we affectionately called Kemba. The design, simulation and control aspects of this project are best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">thesis</a>. Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.</p>
+      <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-<p>Here are videos of Kemba accelerating from rest and bounding around the lab on the <a href="https://chrismailer.github.io/projects/boom/">planarising boom</a> I also built.</p>
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/render-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/render-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/render-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/render.jpg" class="img-fluid rounded" width="auto" height="auto" title="CAD rendering of the boom" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    CAD rendering of the boom.
+</div>
+<p>In the UCT Robotics Lab we have a number of legged robots which run around in the experimental area. To help them balance and provide state information for control I built a custom 2.5m carbon fibre planar support boom. The design and software for the boom is documented in a section of my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">thesis</a>.</p>
+
+<p>The boom uses two tensioned steel cables in a parallelogram arrangement to always keep the end vertical. A Kalman filter fuses state data from the IMU on the end and the high-resolution encoders at the base to estimate the robot position, velocity, and acceleration.</p>
+
+<p>All of the parts I designed were machined in-house at UCT’s workshop. Tight tollerances were particularly important as any slop in the joints would introduce errors into the state estimates. The parts were machined from 6061 aluminium and 304 stainless steel.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/parts-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/parts-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/parts-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/parts.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="image title" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Freshly machined parts for the boom.
+</div>
+<p>To maximise both torsional and lateral rigidity, while remaining as light as possible, the boom arm is a large diameter thin walled tube, maximising the polar moment of inertia. The arm is 2.5m long and is constructed from 3 pieces of 60mm outer diameter carbon fibre tube with a wall thickness of 1.5 mm.</p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/cf-tubes-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/cf-tubes-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/cf-tubes-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/cf-tubes.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-exposed-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-exposed-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-exposed-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-exposed.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Carbon fibre tubes used in the boom arm (Left) and data cables routed through the boom end (Right).
+</div>
+<p>The boom was designed with interchangable mounting ends as some of the robots require the ability to pivot about the end while other needs to be rigidly attached. An incremental optical encoder is incorporated into the pivot enabled end to measure the movement of this additional degree of freedom. An accelerometer is mounted to both mounting ends.</p>
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        <div class="embed-container">
-    <iframe width="640" height="390" src="https://www.youtube.com/embed/KZ1mVP8R52g" frameborder="0" allowfullscreen=""></iframe>
-</div>
-<style>
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-</style>
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-pivot-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-pivot-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-pivot-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-pivot.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
 
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        <div class="embed-container">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-fixed-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-fixed-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-fixed-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-fixed.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Interchangeable boom end configurations each with their own accelerometer.
+</div>
+<p>The hollow stainless steel shafts for the elevation axis on the end insert from either side to preload the bearings in a back-to-back configuration and remove any axial slop in the joint.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/end-render-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/end-render-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/end-render-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/end-render.jpg" class="img-fluid rounded" width="auto" height="auto" title="image title" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Section view of the elevation and roll axes on the boom mounting end. Bearings are shown in red and the hollow stainless steel shafts are shown in yellow.
+</div>
+<p>The centre pivot of the boom serves a stable base which the robot will run around, as well as the primary two degrees of freedom. An incremental quadrature encoder is mounted to each of the axes, geared with a 6mm wide MXL profile timing belt for a 4:1 gear ratio to further increase angular resolution.</p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/centre-joint-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/centre-joint-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/centre-joint-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/centre-joint.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/boom/centre-joint-render-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/boom/centre-joint-render-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/boom/centre-joint-render-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/boom/centre-joint-render.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Centre pivot with encoders and 4:1 timing belt reduction (Left), and sectioned view (Right) of the elevation axis joint showing stainless steel shafts in yellow and bearings in red.
+</div>
+<p>Here you can see the boom doing its thing while <a href="https://chrismailer.github.io/projects/kemba/">Kemba</a> bounds around the lab.</p>
+<div class="embed-container">
     <iframe width="640" height="390" src="https://www.youtube.com/embed/u2Hn26uojoM" frameborder="0" allowfullscreen=""></iframe>
 </div>
 <style>
@@ -234,251 +411,6 @@
 }
 </style>
 
-    </div>
-</div>
-<div class="caption">
-    A video of the robot accelerating from rest directly into a fast bound and running around the lab on the planarising boom.
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/leg-parts-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/leg-parts-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/leg-parts-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/leg-parts.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Fleshy machined aluminium parts for the legs.
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/leg-open-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/leg-open-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/leg-open-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/leg-open.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Partially disassembled leg with second femur half removed showing piston closed kinematic chain arrangement.
-</div>
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-9 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/tibia-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/tibia-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/tibia-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/tibia.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm-3 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/tibia-section-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/tibia-section-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/tibia-section-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/tibia-section.jpeg" class="img-fluid rounded" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Tibia with press fit bearings and foot (Left) and section view showing I-beam cross section (Right).
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/femur-halves-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/femur-halves-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/femur-halves-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/femur-halves.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Separated femur halves with inserted steel knee shaft showing internal thin walled box shape and fastener bosses.
-</div>
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/knee-joint-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/knee-joint-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/knee-joint-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/knee-joint.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/knee-section-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/knee-section-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/knee-section-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/knee-section.jpeg" class="img-fluid rounded" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Exposed knee joint (Left) and cross section (Right) showing the bearings in red, tibia in green, femur in blue, and hollow steel knee shaft in yellow.
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/body-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/body-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/body-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/body.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Sheet metal halves which make up the front (Top) and back (Bottom) of the body with mounted hip motors, solenoid valves, and signal DIN connectors.
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/gim-motor-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/gim-motor-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/gim-motor-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/gim-motor.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/gim-rotor-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/gim-rotor-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/gim-rotor-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/gim-rotor.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/kemba/gim-inside-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/kemba/gim-inside-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/kemba/gim-inside-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/kemba/gim-inside.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    GIM8115-6 actuator (Left) with casing removed to show the back of the rotor (Middle) and it’s large 19mm stack length (Right).
-</div>
 
     </div>
   </article>
@@ -497,6 +429,12 @@
   
 
   <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/kemba/">Kemba</a>
+  </li>
+
+  
+
+  <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/hopper/">A Hopping Robot</a>
   </li>
 
@@ -504,12 +442,6 @@
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/shunt/">Automatic Shunt Regulator</a>
-  </li>
-
-  
-
-  <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2021/boom/">Robot Planarising Boom</a>
   </li>
 
   
