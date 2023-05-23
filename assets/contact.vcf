@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Mailer;Christopher;;;
+FN:Christopher Mailer
+TITLE:MSc Graduate Robotics
+URL:chrismailer.github.io
+EMAIL:christophermailer@icloud.com
+TEL;TYPE=IPHONE;TYPE=CELL;TYPE=pref;TYPE=VOICE:+27 (71) 562-5218
+X-SOCIALPROFILE;X-USER=chrismailer;TYPE=linkedin:https://www.linkedin.com/in/chrismailer
+END:VCARD
