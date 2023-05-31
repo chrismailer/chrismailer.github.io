@@ -13,4 +13,4 @@ For this project I built a physically realistic simulation of the robot using th
 
 The 55 thousands hours of walking in simulation produce an experience map which was then transferred to the physcial hardware enabeling it to change the way it walks and adapt to external influences such as hardware failure or different terrain. The robot adapts quickly by trying gaits in the experience map, and based on its actual performance updates what walking behaviours it thinks will do better than others.
 
-{% include youtube.html id="VrYcNe66Zss" %}
+{% include youtube.html id="3KyUpPa7iBk" %}
