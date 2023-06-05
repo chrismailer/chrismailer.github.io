@@ -4,7 +4,7 @@ title: A robot that can adapt like an animal
 date: 2020-11-15 00:00:00
 description: My bachelors thesis project
 thumbnail: assets/img/hexapod/cover.jpg
-tags: legged-robot simulation control
+categories: Programming
 ---
 
 In our final year of engineering at UCT we have the opportunity to spend the year doing a project we are interested in alongside our coursework under the guidance of an academic advisor. For my project I adapted the work from the paper [Robots that can adapt like animals](https://doi.org/10.1038/nature14422) to make a hexapod robot learn how to quickly adapt to a broken leg. The project is best documented in my [thesis](https://chrismailer.github.io/assets/pdf/mailer-bachelors-thesis.pdf). I also published a [paper](https://dl.acm.org/doi/abs/10.1145/3449639.3459271) on the work.
