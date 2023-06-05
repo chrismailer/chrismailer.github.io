@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chrismailer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chrismailer.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-05T14:54:23+00:00</updated><id>https://chrismailer.github.io/feed.xml</id><title type="html">blank</title><subtitle>A website about me and my projects</subtitle><entry><title type="html">Kemba: A hybrid legged robot</title><link href="https://chrismailer.github.io/blog/2022/kemba/" rel="alternate" type="text/html" title="Kemba: A hybrid legged robot" /><published>2022-12-27T10:00:00+00:00</published><updated>2022-12-27T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/kemba</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/kemba/"><![CDATA[<p>For my masters in UCT’s <a href="https://www.africanroboticsunit.com">robotics lab</a> I built and designed the control algorithms for a legged robot which we affectionately called Kemba. The design, simulation and control aspects of this project are best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">MSc thesis</a>. Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chrismailer.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chrismailer.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-05T16:55:28+00:00</updated><id>https://chrismailer.github.io/feed.xml</id><title type="html">blank</title><subtitle>A website about me and my projects</subtitle><entry><title type="html">Kemba: A hybrid legged robot</title><link href="https://chrismailer.github.io/blog/2022/kemba/" rel="alternate" type="text/html" title="Kemba: A hybrid legged robot" /><published>2022-12-27T10:00:00+00:00</published><updated>2022-12-27T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/kemba</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/kemba/"><![CDATA[<p>For my masters in UCT’s <a href="https://www.africanroboticsunit.com">robotics lab</a> I built and designed the control algorithms for a legged robot which we affectionately called Kemba. The design, simulation and control aspects of this project are best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-masters-thesis.pdf">MSc thesis</a>. Our goal with Kemba was to combine the best of two actuation schemes with pneumatically actuated knees for simple, powerful, compliant, and impact resistant actuation, and proprioceptive electric actuators at the shoulder and hip for high bandwidth torque control and foot placement. Kemba is capable of bounding at up to 1.7m/s with a full flight phase, jumping just under 1m high (2.2 times it’s nominal leg length), and accelerating from rest into a top speed bound in only 2 strides and under half a second.</p>
 
 <p>Here are videos of Kemba accelerating from rest and bounding around the lab on the <a href="https://chrismailer.github.io/projects/boom/">planarising boom</a> I also built.</p>
 <div class="row justify-content-sm-center">
@@ -293,7 +293,7 @@
 </div>
 <div class="caption">
     GIM8115-6 actuator (Left) with casing removed to show the back of the rotor (Middle) and it’s large 19mm stack length (Right).
-</div>]]></content><author><name></name></author><category term="legged-robot" /><category term="control" /><summary type="html"><![CDATA[My masters thesis project]]></summary></entry><entry><title type="html">A hopping robot</title><link href="https://chrismailer.github.io/blog/2022/hopper/" rel="alternate" type="text/html" title="A hopping robot" /><published>2022-11-25T10:00:00+00:00</published><updated>2022-11-25T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/hopper</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/hopper/"><![CDATA[<h2 id="introduction">Introduction</h2>
+</div>]]></content><author><name></name></author><category term="Mechanical" /><category term="Electronics" /><category term="Robotics" /><summary type="html"><![CDATA[My masters thesis project]]></summary></entry><entry><title type="html">A hopping robot</title><link href="https://chrismailer.github.io/blog/2022/hopper/" rel="alternate" type="text/html" title="A hopping robot" /><published>2022-11-25T10:00:00+00:00</published><updated>2022-11-25T10:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/hopper</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/hopper/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <div class="row">
     <div class="col-sm-3 mt-3 mt-md-0"></div>
@@ -392,9 +392,10 @@ F_r \\
 
 \[\tau_{\phi} = Kp_{\phi}(\phi_0 - \phi_{leg}) + Kd_{\phi}(\dot{\phi_0} - \dot{\phi_{leg}})\]
 
-<p>These PD controllers behave like a parallel spring and damper where \(Kp\) is the spring stiffness with units \(\frac{N}{m}\) or \(\frac{Nm}{rad}\) and \(Kd\) is the damping constant with units \(\frac{Ns}{m}\) or \(\frac{Nms}{rad}\). The radial stiffness determines how much the leg compresses during landing. Higher jump heights will need higher radial stiffness to stop the leg bottoming out (think pogo stick). The polar angle stiffness determines how quickly the leg repositions during flight. The damping constants are typically set to keep the axes more or less critically damped and avoid any oscillations.</p>]]></content><author><name></name></author><category term="legged-robot" /><category term="impedance-control" /><category term="formatting" /><category term="images" /><summary type="html"><![CDATA[A legged research platform]]></summary></entry><entry><title type="html">Automatic Shunt Regulator</title><link href="https://chrismailer.github.io/blog/2022/shunt/" rel="alternate" type="text/html" title="Automatic Shunt Regulator" /><published>2022-08-16T00:00:00+00:00</published><updated>2022-08-16T00:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/shunt</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/shunt/"><![CDATA[<p>Two of the legged robots I have worked on use high-current BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful maneuver where lots of energy needs to be dissipated. To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimizing power dissipation during conduction.</p>
+<p>These PD controllers behave like a parallel spring and damper where \(Kp\) is the spring stiffness with units \(\frac{N}{m}\) or \(\frac{Nm}{rad}\) and \(Kd\) is the damping constant with units \(\frac{Ns}{m}\) or \(\frac{Nms}{rad}\). The radial stiffness determines how much the leg compresses during landing. Higher jump heights will need higher radial stiffness to stop the leg bottoming out (think pogo stick). The polar angle stiffness determines how quickly the leg repositions during flight. The damping constants are typically set to keep the axes more or less critically damped and avoid any oscillations.</p>]]></content><author><name></name></author><category term="Mechanical" /><category term="Electronics" /><category term="Robotics" /><summary type="html"><![CDATA[A legged research platform]]></summary></entry><entry><title type="html">Automatic Shunt Regulator</title><link href="https://chrismailer.github.io/blog/2022/shunt/" rel="alternate" type="text/html" title="Automatic Shunt Regulator" /><published>2022-08-16T00:00:00+00:00</published><updated>2022-08-16T00:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2022/shunt</id><content type="html" xml:base="https://chrismailer.github.io/blog/2022/shunt/"><![CDATA[<p>Two of the legged robots I have worked on use high-current BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful maneuver where lots of energy needs to be dissipated. To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimizing power dissipation during conduction.</p>
 
 <div class="row">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
     <div class="col-sm-6 mt-3 mt-md-0">
         <figure>
 
@@ -413,6 +414,7 @@ F_r \\
 </figure>
 
     </div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
 </div>
 <div class="caption">
     Simplified schematic of the shunt regulator circuit. It isn't shown here, but I also included a large flyback diode in parallel with the power resistor.
@@ -424,7 +426,8 @@ F_r \\
 <p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
 
 <div class="row">
-    <div class="col-sm-3 mt-3 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+    <div class="col-sm-6 mt-3 mt-md-0">
         <figure>
 
   <picture>
@@ -442,10 +445,11 @@ F_r \\
 </figure>
 
     </div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
 </div>
 <div class="caption">
     Working circuit on prototype board.
-</div>]]></content><author><name></name></author><category term="electronics" /><category term="control" /><category term="electronics" /><summary type="html"><![CDATA[An automatic shunt regulator for dissipating regenerative power]]></summary></entry><entry><title type="html">Planarising boom for legged robots</title><link href="https://chrismailer.github.io/blog/2021/boom/" rel="alternate" type="text/html" title="Planarising boom for legged robots" /><published>2021-06-17T21:00:00+00:00</published><updated>2021-06-17T21:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2021/boom</id><content type="html" xml:base="https://chrismailer.github.io/blog/2021/boom/"><![CDATA[<div class="row">
+</div>]]></content><author><name></name></author><category term="Electronics" /><summary type="html"><![CDATA[An automatic shunt regulator for dissipating regenerative power]]></summary></entry><entry><title type="html">Planarising boom for legged robots</title><link href="https://chrismailer.github.io/blog/2021/boom/" rel="alternate" type="text/html" title="Planarising boom for legged robots" /><published>2021-06-17T21:00:00+00:00</published><updated>2021-06-17T21:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2021/boom</id><content type="html" xml:base="https://chrismailer.github.io/blog/2021/boom/"><![CDATA[<div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <figure>
 
@@ -667,7 +671,7 @@ F_r \\
   width: 100%;
   height: 100%;
 }
-</style>]]></content><author><name></name></author><category term="design" /><category term="formatting" /><category term="images" /><summary type="html"><![CDATA[Building a support and state feedback boom for legged robots]]></summary></entry><entry><title type="html">A robot that can adapt like an animal</title><link href="https://chrismailer.github.io/blog/2020/hexapod-adapt/" rel="alternate" type="text/html" title="A robot that can adapt like an animal" /><published>2020-11-15T00:00:00+00:00</published><updated>2020-11-15T00:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2020/hexapod-adapt</id><content type="html" xml:base="https://chrismailer.github.io/blog/2020/hexapod-adapt/"><![CDATA[<p>In our final year of engineering at UCT we have the opportunity to spend the year doing a project we are interested in alongside our coursework under the guidance of an academic advisor. For my project I adapted the work from the paper <a href="https://doi.org/10.1038/nature14422">Robots that can adapt like animals</a> to make a hexapod robot learn how to quickly adapt to a broken leg. The project is best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-bachelors-thesis.pdf">thesis</a>. I also published a <a href="https://dl.acm.org/doi/abs/10.1145/3449639.3459271">paper</a> on the work.</p>
+</style>]]></content><author><name></name></author><category term="Mechanical" /><category term="Electronics" /><summary type="html"><![CDATA[Building a support and state feedback boom for legged robots]]></summary></entry><entry><title type="html">A robot that can adapt like an animal</title><link href="https://chrismailer.github.io/blog/2020/hexapod-adapt/" rel="alternate" type="text/html" title="A robot that can adapt like an animal" /><published>2020-11-15T00:00:00+00:00</published><updated>2020-11-15T00:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2020/hexapod-adapt</id><content type="html" xml:base="https://chrismailer.github.io/blog/2020/hexapod-adapt/"><![CDATA[<p>In our final year of engineering at UCT we have the opportunity to spend the year doing a project we are interested in alongside our coursework under the guidance of an academic advisor. For my project I adapted the work from the paper <a href="https://doi.org/10.1038/nature14422">Robots that can adapt like animals</a> to make a hexapod robot learn how to quickly adapt to a broken leg. The project is best documented in my <a href="https://chrismailer.github.io/assets/pdf/mailer-bachelors-thesis.pdf">thesis</a>. I also published a <a href="https://dl.acm.org/doi/abs/10.1145/3449639.3459271">paper</a> on the work.</p>
 
 <p>For this project I built a physically realistic simulation of the robot using the <a href="https://pybullet.org/wordpress/">Bullet</a> physics engine. You can find the simulation code <a href="https://github.com/chrismailer/hexapod-sim">here</a>. Using the simulator, approximately 40 million walking simulations were run on South Africa’s 1.3 petaFLOPS Lengau cluster to find different ways of walking which used each of the legs in different amounts.</p>
 
@@ -693,4 +697,108 @@ F_r \\
   width: 100%;
   height: 100%;
 }
-</style>]]></content><author><name></name></author><category term="legged-robot" /><category term="simulation" /><category term="control" /><summary type="html"><![CDATA[My bachelors thesis project]]></summary></entry></feed>
+</style>]]></content><author><name></name></author><category term="Programming" /><summary type="html"><![CDATA[My bachelors thesis project]]></summary></entry><entry><title type="html">S.A Agulhas II Ice Claw</title><link href="https://chrismailer.github.io/blog/2019/claw/" rel="alternate" type="text/html" title="S.A Agulhas II Ice Claw" /><published>2019-08-06T00:00:00+00:00</published><updated>2019-08-06T00:00:00+00:00</updated><id>https://chrismailer.github.io/blog/2019/claw</id><content type="html" xml:base="https://chrismailer.github.io/blog/2019/claw/"><![CDATA[<p>For this project a group of 4 of us won a proposal at the end of 2018 from the Polar Arctic Research Group to design a better system for picking up large ice floes onto the S.A Agulhas II for core sample drilling. The S.A Agulhas II is a research vessel and polar supply ship which takes researches, equipment and supplies down to Marion Island and the Antarctic Ice Shelf bases. It is famously known for being the mother ship for the Endurance22 Expedition when Sir Ernest Shackleton’s ship, Endurance was found.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/claw/agulhas-iceshelf-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/claw/agulhas-iceshelf-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/claw/agulhas-iceshelf-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/claw/agulhas-iceshelf.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    S.A. Agulhas II parked alongside the Antarctic ice shelf.
+</div>
+
+<p>Ice floes are large pancake shaped pieces of ice which break off and drift around in the marginal ice zone. Core samples from these pieces of ice provide invaluable data on microbial life, carbon levels, sea temperature and ocean currents which are collected and stored in the layers as they drift around.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/claw/agulhas-ice-floes-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/claw/agulhas-ice-floes-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/claw/agulhas-ice-floes-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/claw/agulhas-ice-floes.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    S.A. Agulhas II pushing through the marginal ice zone surrounded by ice floes.
+</div>
+
+<p>Currently the research group would use a net and suspended ‘wranglers’ to catch an ice floe as it drifted past, however, only the smallest floes could be collected due to the breaking strength of the net and difficulty in enveloping the ice in the net.</p>
+
+<p>For the proposal we designed a novel claw mechanism which used the weight of the ice to grip down harder for heavier pieces of ice. The design was simple and cost effective because it did not require any hydraulic actuation and could be attached directly to the existing cranes on the ship.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/claw/rendering-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/claw/rendering-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/claw/rendering-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/claw/rendering.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Rendering of the proposed ice claw. Pulling on the central cables causes the claws to close and clamp onto pieces of ice.
+</div>
+
+<p>We also prototyped the claw in the UCT swimming pool with scale ice floes frozen in the walk-in HW Pearson building freezers.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/claw/prototype-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/claw/prototype-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/claw/prototype-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/claw/prototype.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Prototype of the claw to test the clamping mechanism.
+</div>]]></content><author><name></name></author><category term="Mechanical" /><summary type="html"><![CDATA[A claw for catching ice floes]]></summary></entry></feed>

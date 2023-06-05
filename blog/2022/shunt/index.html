@@ -172,14 +172,8 @@
     <p class="post-tags">
       <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
         ·  
-        <a href="/blog/tag/electronics">
-          <i class="fas fa-hashtag fa-sm"></i> electronics</a>  
-          
-        ·  
         <a href="/blog/category/electronics">
-          <i class="fas fa-tag fa-sm"></i> electronics</a>  
-          <a href="/blog/category/control">
-          <i class="fas fa-tag fa-sm"></i> control</a>  
+          <i class="fas fa-tag fa-sm"></i> Electronics</a>  
           
 
     </p>
@@ -191,6 +185,7 @@
       <p>Two of the legged robots I have worked on use high-current BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful maneuver where lots of energy needs to be dissipated. To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/" rel="external nofollow noopener" target="_blank">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimizing power dissipation during conduction.</p>
 
 <div class="row">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
     <div class="col-sm-6 mt-3 mt-md-0">
         <figure>
 
@@ -209,6 +204,7 @@
 </figure>
 
     </div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
 </div>
 <div class="caption">
     Simplified schematic of the shunt regulator circuit. It isn't shown here, but I also included a large flyback diode in parallel with the power resistor.
@@ -220,7 +216,8 @@
 <p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
 
 <div class="row">
-    <div class="col-sm-3 mt-3 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
+    <div class="col-sm-6 mt-3 mt-md-0">
         <figure>
 
   <picture>
@@ -238,6 +235,7 @@
 </figure>
 
     </div>
+    <div class="col-sm-3 mt-3 mt-md-0"></div>
 </div>
 <div class="caption">
     Working circuit on prototype board.
@@ -279,6 +277,12 @@
 
   <li class="my-2">
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2020/hexapod-adapt/">A robot that can adapt like an animal</a>
+  </li>
+
+  
+
+  <li class="my-2">
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2019/claw/">S.A Agulhas II Ice Claw</a>
   </li>
 
 </div>
