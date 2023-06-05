@@ -191,7 +191,7 @@
       <p>Two of the legged robots I have worked on use high-current BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This results in the robots shutting down and collapsing, typically during a particularly powerful maneuver where lots of energy needs to be dissipated. To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/" rel="external nofollow noopener" target="_blank">ODrive</a> motor controller. The shunt regulator works by detect this rise in PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimizing power dissipation during conduction.</p>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         <figure>
 
   <picture>
@@ -220,8 +220,7 @@
 <p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0"></div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0">
         <figure>
 
   <picture>
@@ -239,7 +238,6 @@
 </figure>
 
     </div>
-    <div class="col-sm mt-3 mt-md-0"></div>
 </div>
 <div class="caption">
     Working circuit on prototype board.
