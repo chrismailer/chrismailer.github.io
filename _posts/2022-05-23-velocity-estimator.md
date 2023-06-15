@@ -51,15 +51,15 @@ The gains for the PI tracking loop are selected to ensure the response is critic
 
 $$ \mathbf{\dot{x}}(t) = \mathbf{A}\mathbf{x}(t) + \mathbf{B}\mathbf{u}(t) $$
 
-Like this
+Like this where $$p_e$$ is the count from the encoder.
 
 $$ \begin{bmatrix} \dot{p} \\ \dot{v} \end{bmatrix} = \begin{bmatrix} -Kp & 1 \\ -Ki & 0 \end{bmatrix}\begin{bmatrix} p \\ v \end{bmatrix} + \begin{bmatrix} Kp \\ Ki \end{bmatrix} \begin{bmatrix} p_e \\ 0 \end{bmatrix} $$
 
 By looking at the eigenvalues of the $$\mathbf{A}$$ matrix we can place the poles and determine the natural response of the system.
 
-$$ pole = \frac{-Kp}{2} \pm \frac{\sqrt{Kp^2-4Ki}}{2}i $$
+$$ poles = eig(\mathbf{A}) = \frac{-Kp}{2} \pm \frac{\sqrt{Kp^2-4Ki}}{2}i $$
 
-For tracking to be critically damped the imaginary component should be zero, and the real component will determine the tracking bandwidth.
+For tracking to be critically damped the imaginary component should be zero, and the real component will determine the responsiveness or bandwidth of the tracking.
 
 $$ Ki = \frac{Kp^2}{4} $$
 
