@@ -18,24 +18,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>A simple BLDC shunt regulator | Christopher Mailer</title>
+<title>Estimating encoder velocity | Christopher Mailer</title>
     <meta name="author" content="Christopher Mailer">
-    <meta name="description" content="An automatic shunt regulator for dissipating BLDC regen power">
+    <meta name="description" content="A better way to estimate velocity with quadrature encoders.">
     <meta name="keywords" content="chrismailer, christopher, mailer, africa, profile, portfolio, engineering, design, research, robotics, mechatronics">
 
     <!-- OpenGraph -->
-    <meta property="og:site_name" content="A simple BLDC shunt regulator | Christopher Mailer">
+    <meta property="og:site_name" content="Estimating encoder velocity | Christopher Mailer">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="A simple BLDC shunt regulator | Christopher Mailer">
-    <meta property="og:url" content="https://chrismailer.github.io/blog/2022/shunt/">
-    <meta property="og:description" content="An automatic shunt regulator for dissipating BLDC regen power">
+    <meta property="og:title" content="Estimating encoder velocity | Christopher Mailer">
+    <meta property="og:url" content="https://chrismailer.github.io/blog/2022/velocity-estimator/">
+    <meta property="og:description" content="A better way to estimate velocity with quadrature encoders.">
     <meta property="og:image" content="/assets/img/profile.jpeg">
     <meta property="og:locale" content="en">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="A simple BLDC shunt regulator">
-    <meta name="twitter:description" content="An automatic shunt regulator for dissipating BLDC regen power">
+    <meta name="twitter:title" content="Estimating encoder velocity">
+    <meta name="twitter:description" content="A better way to estimate velocity with quadrature encoders.">
     <meta name="twitter:image" content="/assets/img/profile.jpeg">
     
 
@@ -47,10 +47,10 @@
           "@type": "Person",
           "name": "Christopher  Mailer"
         },
-        "url": "https://chrismailer.github.io/blog/2022/shunt/",
+        "url": "https://chrismailer.github.io/blog/2022/velocity-estimator/",
         "@type": "WebSite",
-        "description": "An automatic shunt regulator for dissipating BLDC regen power",
-        "headline": "A simple BLDC shunt regulator",
+        "description": "A better way to estimate velocity with quadrature encoders.",
+        "headline": "Estimating encoder velocity",
         "sameAs": ["https://scholar.google.com/citations?user=lDH4KnUAAAAJ", "https://github.com/chrismailer", "https://www.linkedin.com/in/chrismailer"],
         "name": "Christopher  Mailer",
         "@context": "https://schema.org"
@@ -87,7 +87,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://chrismailer.github.io/blog/2022/shunt/">
+    <link rel="canonical" href="https://chrismailer.github.io/blog/2022/velocity-estimator/">
     
     <!-- Dark Mode -->
     
@@ -167,8 +167,8 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">A simple BLDC shunt regulator</h1>
-    <p class="post-meta">August 16, 2022</p>
+    <h1 class="post-title">Estimating encoder velocity</h1>
+    <p class="post-meta">May 23, 2022</p>
     <p class="post-tags">
       <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
         ·  
@@ -184,66 +184,62 @@
   <article class="post-content">
     
     <div id="markdown-content">
-      <p>Two of the legged robots I have worked on use high-current BLDC motors coupled to a planetary gearbox as their actuators like the MIT proprioceptive actuators. These actuators are awesome, but have a small problem when running from a power supply rather than a battery pack. When doing negative work the motors will back-feed the power supply, raising the voltage on the output filtering capacitors and triggering the over voltage protection. This has resulted in many of the robots shutting down and collapsing in a rather dramatic fashion.</p>
+      <p>This is a really interesting method for estimating encoder velocity which I stumbled upon <a href="">here</a>. It’s also used in the ODrive motor controller firmware. It uses a tracking loop to follow the encoder measurement with a PI feedback loop and finite bandwidth. What you end up with is filtered position and velocity estimates which you can use for control.</p>
 
-<p>To fix this I built an automatic shunt regulator based off of the one I saw on the open-source <a href="https://odriverobotics.com/" rel="external nofollow noopener" target="_blank">ODrive</a> motor controller. The shunt regulator works by detecting this rise in the PSU voltage and dumping the energy from the motors into a 50W 0.47Ω power resistor, essentially acting as a variable load and regulating the voltage. A microcontroller monitors the supply voltage with a voltage divider and regulates the amount of power going into the brake resistor by varying the duty cycle of a 20kHz PWM signal switching a MOSFET. The gate driver quickly charges the gate capacitance and ensures the MOSFET is turned on hard, minimizing power dissipation during conduction.</p>
-
-<div class="row">
-    <div class="col-sm-3 mt-3 mt-md-0"></div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/shunt/schematic-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/shunt/schematic-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/shunt/schematic-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/shunt/schematic.png" class="img-fluid rounded" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm-3 mt-3 mt-md-0"></div>
-</div>
-<div class="caption">
-    Simplified schematic of the shunt regulator circuit. It isn't shown here, but I also included a large flyback diode in parallel with the power resistor.
-</div>
-
-<p>The PWM signal is linearly ramped up based on the bus voltage providing a smooth fade in or out as opposed to instantly dumping the maximum possible power, over 1.2kW, through the brake resistor for even just small voltage spikes. The duty cycle is controlled with this proportional controller in the microcontroller code.</p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">brake_duty</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">max</span><span class="p">((</span><span class="n">bus_voltage</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">overvoltage_ramp_end</span> <span class="o">-</span> <span class="n">overvoltage_ramp_start</span><span class="p">),</span> <span class="mf">0.0</span><span class="n">f</span><span class="p">),</span> <span class="mf">1.0</span><span class="n">f</span><span class="p">);</span>
+<p>For some background and context as to why encoder velocity estimation is not trivial, quadrature encoders track position and direction by sensing evenly spaced markings on tracks, kind of like measuring distance by counting paces except on a much smaller scale. On the rotary encoders I have worked with these markings are made with either tiny gaps cut into a metal disk or incredibly small opaque patches etched onto a glass disk, and are picked up with an array of IR sensors to detect whether the light passes through the disk or is blocked. These markings can get mind-blowingly small. Typically two tracks of markings 90° out of phase are used which has two benefits.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>               _______         _______       
+Track A ______|       |_______|       |______
+           _______         _______         __
+Track B __|       |_______|       |_______|  
 </code></pre></div></div>
-<p>By configuring <code class="language-plaintext highlighter-rouge">overvoltage_ramp_start</code> and <code class="language-plaintext highlighter-rouge">overvoltage_ramp_end</code> in the firmware the supply voltage and responsiveness of the power dissipation can be adjusted.</p>
+<ol>
+  <li>Resolution is doubled without gaps needing to be manufactured smaller.</li>
+  <li>Direction can be detected based on which track leads or lags. (Mainly this one)</li>
+</ol>
 
-<div class="row">
-    <div class="col-sm-3 mt-3 mt-md-0"></div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        <figure>
+<p>Measuring the angular position and direction of an encoder is straightforward and can be done by using a microcontroller to keep count of the rising and falling edges for each of the tracks. Position is only known accurately at each edge, which for most applications is fine. Typically people assume a zero-order hold and recycle the same position measurement until the next edge is detected.</p>
 
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/shunt/cover-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/shunt/cover-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/shunt/cover-1400.webp"></source>
-    
+<p>However, this becomes problematic when trying to estimate the velocity of the encoder. Average velocity is calculated using $\frac{\Delta x}{\Delta t}$ and with this discrete system you have the option of fixing either $\Delta x$ or $\Delta t$.</p>
 
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/shunt/cover.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<p>A fixed $\Delta t$ or sample frequency is often the easiest implementation on a microcontroller, but becomes an issue for low resolution encoders or slow movements when the $\Delta t$ is significantly smaller than the time between pulses. With multiple samples between edges this results in a stream of zero speed measurements followed by a velocity spike when an edge is detected and then more zero’s - not ideal for control.</p>
 
-  </picture>
+<p>Alternatively a fixed $\Delta x$ is a bit harder to implement needing a hardware timer to measure the $\Delta t$ between pulses, but will provide the most accurate velocity average from the given information. This approach has problems with very high resolution encoders and fast speeds where more and more microcontroller clock cycles will be spent in interrupt handlers. Also the stationary case where the timer will overflow needs to be handled separately and often you might not be able to hook the encoder up to a fast timer if separate hardware is tracking encoder pulses.</p>
 
-</figure>
+<p>Also need to mention that discrete position measurements and noisy velocity values result in pretty rough control and just arbitrarily filtering these values is never a good approach.</p>
 
-    </div>
-    <div class="col-sm-3 mt-3 mt-md-0"></div>
-</div>
-<div class="caption">
-    Working circuit on prototype board.
-</div>
+<h2 id="tracking-loop">Tracking loop</h2>
+<p>There is a very neat alternative to both of these methods which uses a tracking loop and feedback to follow the encoder pulses. This method is used in the ODrive motor controller firmware and is also talked about <a href="https://www.embeddedrelated.com/showarticle/530.php" rel="external nofollow noopener" target="_blank">here</a>. The tracking bandwidth can be adjusted for the encoder resolution and anticipated speed. Because it is a PI loop is has the benefit of providing both position and velocity estimates between encoder edges. Also handling the stationary case comes for free and it is not a headache to implement.</p>
+
+<p>This is all the C++ code you need.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">PLL</span><span class="o">::</span><span class="n">update</span><span class="p">(</span><span class="kt">int32_t</span> <span class="n">encoder_pos</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">position</span> <span class="o">+=</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">velocity</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">pos_error</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">encoder_pos</span> <span class="o">-</span> <span class="p">(</span><span class="kt">int32_t</span><span class="p">)</span><span class="n">floor</span><span class="p">(</span><span class="n">position</span><span class="p">));</span>
+    <span class="n">position</span> <span class="o">+=</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">Kp</span> <span class="o">*</span> <span class="n">pos_error</span><span class="p">;</span>
+    <span class="n">velocity</span> <span class="o">+=</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">Ki</span> <span class="o">*</span> <span class="n">pos_error</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The position and velocity variables have units of <code class="language-plaintext highlighter-rouge">counts</code> and <code class="language-plaintext highlighter-rouge">counts/s</code>. This feedback loop update needs to be called fast enough to meet the desired tracking bandwidth. ODrive runs it at 20kHz which seems good enough for most applications.</p>
+
+<h2 id="selecting-kp-and-ki">Selecting Kp and Ki</h2>
+
+<p>The gains for the PI tracking loop are selected to ensure the response is critically damped - fast with no oscillations. The system can be written in the linear time-invariant form.</p>
+
+\[\mathbf{\dot{x}}(t) = \mathbf{A}\mathbf{x}(t) + \mathbf{B}\mathbf{u}(t)\]
+
+<p>Like this</p>
+
+\[\begin{bmatrix} \dot{p} \\ \dot{v} \end{bmatrix} = \begin{bmatrix} -Kp &amp; 1 \\ -Ki &amp; 0 \end{bmatrix}\begin{bmatrix} p \\ v \end{bmatrix} + \begin{bmatrix} Kp \\ Ki \end{bmatrix} \begin{bmatrix} p_e \\ 0 \end{bmatrix}\]
+
+<p>By looking at the eigenvalues of the $\mathbf{A}$ matrix we can place the poles and determine the natural response of the system.</p>
+
+\[pole = \frac{-Kp}{2} \pm \frac{\sqrt{Kp^2-4Ki}}{2}i\]
+
+<p>For tracking to be critically damped the imaginary component should be zero, and the real component will determine the tracking bandwidth.</p>
+
+<p>\(Ki = \frac{Kp^2}{4}\)
+\(Kp = 2\cdot Bandwidth\)</p>
 
     </div>
   </article>
@@ -274,7 +270,7 @@
   
 
   <li class="my-2">
-    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/velocity-estimator/">Estimating encoder velocity</a>
+    <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2022/shunt/">A simple BLDC shunt regulator</a>
   </li>
 
   
