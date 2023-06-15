@@ -228,15 +228,15 @@ Track B __|       |_______|       |_______|
 
 \[\mathbf{\dot{x}}(t) = \mathbf{A}\mathbf{x}(t) + \mathbf{B}\mathbf{u}(t)\]
 
-<p>Like this</p>
+<p>Like this where \(p_e\) is the count from the encoder.</p>
 
 \[\begin{bmatrix} \dot{p} \\ \dot{v} \end{bmatrix} = \begin{bmatrix} -Kp &amp; 1 \\ -Ki &amp; 0 \end{bmatrix}\begin{bmatrix} p \\ v \end{bmatrix} + \begin{bmatrix} Kp \\ Ki \end{bmatrix} \begin{bmatrix} p_e \\ 0 \end{bmatrix}\]
 
 <p>By looking at the eigenvalues of the \(\mathbf{A}\) matrix we can place the poles and determine the natural response of the system.</p>
 
-\[pole = \frac{-Kp}{2} \pm \frac{\sqrt{Kp^2-4Ki}}{2}i\]
+\[poles = eig(\mathbf{A}) = \frac{-Kp}{2} \pm \frac{\sqrt{Kp^2-4Ki}}{2}i\]
 
-<p>For tracking to be critically damped the imaginary component should be zero, and the real component will determine the tracking bandwidth.</p>
+<p>For tracking to be critically damped the imaginary component should be zero, and the real component will determine the responsiveness or bandwidth of the tracking.</p>
 
 \[Ki = \frac{Kp^2}{4}\]
 
