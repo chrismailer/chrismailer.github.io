@@ -21,11 +21,11 @@ Track B __|       |_______|       |_______|
 
 Measuring the angular position and direction of an encoder is straightforward and can be done by using a microcontroller to keep count of the rising and falling edges for each of the tracks. Position is only known accurately at each edge, which for most applications is fine. Typically people assume a zero-order hold and recycle the same position measurement until the next edge is detected.
 
-However, this becomes problematic when trying to estimate the velocity of the encoder. Average velocity is calculated using $\frac{\Delta x}{\Delta t}$ and with this discrete system you have the option of fixing either $\Delta x$ or $\Delta t$.
+However, this becomes problematic when trying to estimate the velocity of the encoder. Average velocity is calculated using $$\frac{\Delta x}{\Delta t}$$ and with this discrete system you have the option of fixing either $$\Delta x$$ or $$\Delta t$$.
 
-A fixed $\Delta t$ or sample frequency is often the easiest implementation on a microcontroller, but becomes an issue for low resolution encoders or slow movements when the $\Delta t$ is significantly smaller than the time between pulses. With multiple samples between edges this results in a stream of zero speed measurements followed by a velocity spike when an edge is detected and then more zero's - not ideal for control.
+A fixed $$\Delta t$$ or sample frequency is often the easiest implementation on a microcontroller, but becomes an issue for low resolution encoders or slow movements when the $$\Delta t$$ is significantly smaller than the time between pulses. With multiple samples between edges this results in a stream of zero speed measurements followed by a velocity spike when an edge is detected and then more zero's - not ideal for control.
 
-Alternatively a fixed $\Delta x$ is a bit harder to implement needing a hardware timer to measure the $\Delta t$ between pulses, but will provide the most accurate velocity average from the given information. This approach has problems with very high resolution encoders and fast speeds where more and more microcontroller clock cycles will be spent in interrupt handlers. Also the stationary case where the timer will overflow needs to be handled separately and often you might not be able to hook the encoder up to a fast timer if separate hardware is tracking encoder pulses.
+Alternatively a fixed $$\Delta x$$ is a bit harder to implement needing a hardware timer to measure the $$\Delta t$$ between pulses, but will provide the most accurate velocity average from the given information. This approach has problems with very high resolution encoders and fast speeds where more and more microcontroller clock cycles will be spent in interrupt handlers. Also the stationary case where the timer will overflow needs to be handled separately and often you might not be able to hook the encoder up to a fast timer if separate hardware is tracking encoder pulses.
 
 Also need to mention that discrete position measurements and noisy velocity values result in pretty rough control and just arbitrarily filtering these values is never a good approach.
 
@@ -55,7 +55,7 @@ Like this
 
 $$ \begin{bmatrix} \dot{p} \\ \dot{v} \end{bmatrix} = \begin{bmatrix} -Kp & 1 \\ -Ki & 0 \end{bmatrix}\begin{bmatrix} p \\ v \end{bmatrix} + \begin{bmatrix} Kp \\ Ki \end{bmatrix} \begin{bmatrix} p_e \\ 0 \end{bmatrix} $$
 
-By looking at the eigenvalues of the $\mathbf{A}$ matrix we can place the poles and determine the natural response of the system.
+By looking at the eigenvalues of the $$\mathbf{A}$$ matrix we can place the poles and determine the natural response of the system.
 
 $$ pole = \frac{-Kp}{2} \pm \frac{\sqrt{Kp^2-4Ki}}{2}i $$
 
