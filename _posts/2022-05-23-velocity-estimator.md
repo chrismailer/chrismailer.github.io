@@ -3,7 +3,7 @@ layout: post
 title: Estimating encoder velocity
 date: 2022-05-23 00:00:00
 description: A better way to estimate velocity with quadrature encoders.
-thumbnail:
+thumbnail: assets/img/exposed-optical-encoder.jpeg
 categories: Electronics Control
 ---
 
@@ -62,4 +62,5 @@ $$ pole = \frac{-Kp}{2} \pm \frac{\sqrt{Kp^2-4Ki}}{2}i $$
 For tracking to be critically damped the imaginary component should be zero, and the real component will determine the tracking bandwidth.
 
 $$ Ki = \frac{Kp^2}{4} $$
+
 $$ Kp = 2\cdot Bandwidth $$
