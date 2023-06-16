@@ -4,42 +4,52 @@
     - name: Full Name
       value: Christopher Mailer
     - name: Languages
-      value: English (Native), Afrikaans (High School)
+      value: English (Native), Afrikaans (Conversational)
 
 - title: Education
   type: time_table
   contents:
     - title: MSc Electrical Engineering
       institution: University of Cape Town
-      year: June 2023
+      year: Dec 2023
       description:
-        - Thesis on the design and optimal control of a novel planar legged robot which combines proprioceptive and pneumatic actuators for <a href="https://www.youtube.com/watch?v=KZ1mVP8R52g">agile manoeuvres</a>.
-        - Awarded three prestigious merit-based scholarships and fellowships.
-        - Due to present results at a <a href="https://www.icra2023.org">top robotics research conference</a> (See publications)
+        - Awarded a Research Fellowship from the Harry Crossley Foundation.
+        - "Thesis: Control of Rapid Acceleration in a Planar Legged Robot"
+        - "Advisers: Amir Patel, Reuben Govender"
     - title: BSc Mechanical and Mechatronic Engineering
       institution: University of Cape Town
       year: July 2021
       description:
-        - Top of class (Graduated with First Class Honours)
+        - Class Medal (highest GPA and First Class Honours)
+        - "Thesis: Online Gait Adaptation of the RARL Hexapod Robot"
+        - "Advisers: Leanne Raw, Geoff Nitschke"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Mechatronics Lab Engineer
-      institution: University of Cape Town - Robotics Lab
-      year: Feb 2021 - Now
+    - title: Aerospace Hardware Engineer
+      institution: CubeSpace Satellite Systems
+      year: June 2023 - Present
+    
+    - title: Graduate Robotics Researcher/Engineer
+      institution: African Robotics Unit, University of Cape Town
+      year: Feb 2021 - June 2023
 
-    - title: Mechatronics Lab Intern
-      institution: University of Cape Town – Robotics Lab
-      year: Nov 2019 - Dec 2019
+    - title: Undergraduate Robotics Researcher
+      institution: Robotics and Agents Research Laboratory, University of Cape Town
+      year: Feb 2020 - Dec 2020
+
+    - title: Robotics Research Intern
+      institution: African Robotics Unit, University of Cape Town
+      year: Summer 2019
 
     - title: Practical Training Course
       institution: Cape Peninsula University of Technology
-      year: Nov 2018 - Dec 2018
+      year: Summer 2018
 
     - title: Software Intern
       institution: Prescient Investment Management
-      year: Nov 2017 - Dec 2018
+      year: Summer 2016 & 2017
 
 - title: Honours and Awards
   type: time_table
@@ -61,11 +71,13 @@
 - title: Skills
   type: map
   contents:
+    - name: Programming
+      value: Python, MATLAB, C/C++, LaTex, R
     - name: Software
-      value: SolidWorks, MATLAB
-    - name: Programming Languages
-      value: MATLAB, Python, C/C++, R, Swift
+      value: SolidWorks, Simulink, PyBullet, STM32 HAL
+    - name: Techniques
+      value: Design for Manufacture & Assembly, FEA, GD&T, Trajectory Optimisation (IPOPT)
 
 - title: Hobbies
   type: list
-  contents: Surfing, Cycling, Sailing
+  contents: Cycling (6x Cape Town Cycle Tour), Sailing (Competed in Cape2Rio 2023), Surfing, Wood Turning
