@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A robot that can adapt like an animal
+title: "Hexapod: Adapting like an animal"
 date: 2020-11-15 00:00:00
 description: My bachelors thesis project
 thumbnail: assets/img/hexapod/cover.jpg
