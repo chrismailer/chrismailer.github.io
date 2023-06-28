@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MSc Graduate - Robotics
+subtitle: Mechanical Engineer at <a href="https://www.cubespace.co.za">CubeSpace</a>
 
 profile:
   align: right
