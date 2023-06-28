@@ -48,6 +48,10 @@ table.table a {
   }
 }
 
+.table-dark {
+  background-color: transparent;
+}
+
 figure,
 img {
   max-width: 90vw;
@@ -372,6 +376,12 @@ footer.sticky-bottom {
   }
 }
 
+.table-cv-map {
+  background-color: transparent;
+  border: none;
+  color: var(--global-text-color);
+}
+
 // Repositories
 
 @media (min-width: 768px) {
@@ -394,7 +404,7 @@ footer.sticky-bottom {
   }
 }
 
-.tag-list {
+.tag-category-list {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
   padding-top: 1rem;
@@ -557,7 +567,7 @@ footer.sticky-bottom {
     }
   }
 
-  h2.year {
+  h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
@@ -776,6 +786,10 @@ html.transition *:after {
     blockquote {
       border-left: 5px solid var(--global-theme-color);
       padding: 8px;
+
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -947,3 +961,44 @@ nav[data-toggle="toc"] {
   }
 }
 
+/* Tips, warnings, and dangers blockquotes */
+.post .post-content blockquote {
+  &.block-tip {
+    border-color: var(--global-tip-block);
+    background-color: var(--global-tip-block-bg);
+
+    p {
+      color: var(--global-tip-block-text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--global-tip-block-title);
+    }
+  }
+
+  &.block-warning {
+    border-color: var(--global-warning-block);
+    background-color: var(--global-warning-block-bg);
+
+    p {
+      color: var(--global-warning-block-text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--global-warning-block-title);
+    }
+  }
+
+  &.block-danger {
+    border-color: var(--global-danger-block);
+    background-color: var(--global-danger-block-bg);
+
+    p {
+      color: var(--global-danger-block-text);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--global-danger-block-title);
+    }
+  }
+}
