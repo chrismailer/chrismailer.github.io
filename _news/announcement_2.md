@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[Kemba featured in IEEE Spectrum!](https://spectrum.ieee.org/cheetah-robot-pneumatic) 🎉
+[My MSc publication was featured in IEEE Spectrum!](https://spectrum.ieee.org/cheetah-robot-pneumatic) 🎉
