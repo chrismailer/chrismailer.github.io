@@ -7,7 +7,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: MSc Electrical Engineering
+    - title: Master of Science in Engineering (Robotics)
       institution: University of Cape Town
       year: Dec 2023
       description:
@@ -41,9 +41,9 @@
       institution: African Robotics Unit, University of Cape Town
       year: Summer 2019
 
-    - title: Practical Training Course
-      institution: Cape Peninsula University of Technology
-      year: Summer 2018
+#    - title: Practical Training Course
+#      institution: Cape Peninsula University of Technology
+#      year: Summer 2018
 
     - title: Software Intern
       institution: Prescient Investment Management
