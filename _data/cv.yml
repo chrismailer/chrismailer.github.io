@@ -3,8 +3,6 @@
   contents:
     - name: Full Name
       value: Christopher Mailer
-    - name: Languages
-      value: English (Native), Afrikaans (Conversational)
 
 - title: Education
   type: time_table
